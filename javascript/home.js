@@ -1,4 +1,5 @@
 import "../styles/styles.css";
+import daysTimesData from "../data/daysTimes.json";
 
     const content = document.querySelector("#content");
     // console.log("test");
@@ -46,39 +47,17 @@ import "../styles/styles.css";
         const addSchedule = (function () {
             const days = document.querySelector("#days");
             const times = document.querySelector("#times");
-
-            fetch("/data/daysTimes.json")
-
-// NEW***********************************************************************
-              .then((response) => {
-                if (!response.ok) {
-                  throw new Error("Network response was not ok");
-                }
-                return response.json();
-              })
-
-
-              .then((data) => {
-                data.forEach((dayOfWeek) => {
-                  const dayElement = document.createElement("p");
-                  dayElement.textContent = dayOfWeek.day;
-                  days.appendChild(dayElement);
-
-                  // console.log(
-                  //     `${dayOfWeek.day} ${dayOfWeek.time}`
-                  // );
-                });
-                data.forEach((timeOfWeek) => {
-                  const timeElement = document.createElement("p");
-                  timeElement.textContent = timeOfWeek.time;
-                  times.appendChild(timeElement);
-                });
-              })
-              .catch((error) => {
-                console.error("Error fetching data:", error);
-              });
-        })();
-
+            daysTimesData.forEach((dayOfWeek) => {
+                const dayElement = document.createElement("p");
+                dayElement.textContent = dayOfWeek.day;
+                days.appendChild(dayElement);
+            });
+            daysTimesData.forEach((timeOfWeek) => {
+                const timeElement = document.createElement("p");
+                timeElement.textContent = timeOfWeek.time;
+                times.appendChild(timeElement);
+            });
+        })()
 
         const break2 = document.createElement("br");
         hoursLocation.appendChild(break2);
