@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* All three... */
+
+:root {
+    --white: #fafbfd;
+    --white2: #fafbfd66;
+    --rose: #ee93b4;
+    --dk-rose: #D34D70;
+    --lt-leaf: #90c754;
+    --dk-leaf: #175f3a;
+    --blue-iron: #01393a;
+    --font-title:  "Dancing Script", cursive;
+    --font-main: "Roboto Condensed", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    min-width: 318px;
+    margin: auto;
+}
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 82%;
+    /* height: auto;
+    width: auto; */
+    /* background-color: var(--blue-iron); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+#title {
+    height: auto;
+    width: 100vw;
+    background-color: var(--blue-iron);
+    border-top: 5px double var(--white);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    font-family: var(--font-title);
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    /* padding: .5rem */
+    padding: 1rem 0 .5rem 0;
+}
+
+#subtitle {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h1, h2 {
+    margin: 0;
+    padding:0
+}
+
+.leaf {
+    width: 2rem;
+}
+
+nav {
+    height: auto;
+    width: 100vw;
+    background-color: var(--blue-iron);
+    border-bottom: 5px double var(--white);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    background: none;
+    background-image: url("../assets/images/ornamental-circle-lt-leaf.svg");
+    /* background: radial-gradient(circle, var(--dk-rose) 1%, var(--rose) 95%); */
+    border: none;
+    border-radius: 4rem;
+    color: var(--lt-leaf);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    font-family: var(--font-main);
+    font-size: 1.52rem;
+    font-weight: 900;
+    margin-top: .5rem;
+    outline: none;
+}
+
+button:hover {
+        /* background: var(--dk-rose); */
+            background-image: url("../assets/images/ornamental-circle-rose.svg");
+            color: var(--rose);
+    transform: scale(1.15);
+}
+
+button:active {
+    /* background: radial-gradient(circle, var(--rose) 65%, var(--white) 95%); */
+    transform: scale(.95);
+}
+
+footer {
+    position: fixed; 
+    top: 95%; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    /* height: auto;
+    width: auto; */
+    background-color: var(--blue-iron);
+    border-top: 5px double var(--white);
+    color: var(--white);
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    font-family: var(--font-title);
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: normal;
+    padding: .5rem;
+    /* z-index: 10; */
+}
+
+
+/* Home Page */
+
+#home {
+    height: 100vh;
+    width: auto;
+    background-image: url("../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg");
+    /* Additional properties for background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#hours-location {
+    height: fit-content;
+    width: 320px;
+    background-color: var(--white2);
+    /* border: 5cm double var(--blue-iron); */
+    border-radius: 3rem;
+    color: var(--blue-iron);
+    display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    /* opacity: .8; */
+    font-family: var(--font-main);
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6rem;
+    /* padding-top: .5rem; */
+}
+
+#hours-location h2 {
+    font-size: 2rem;
+}
+
+#hours-location p {
+    font-size: 1.25rem;
+}
+
+.p-center {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+#hours-location h2, #hours-location p {
+    font-weight: 900;
+}
+
+#days-times {
+    display: flex;
+        justify-content: start;
+        align-items: start;
+    text-align: left;
+}
+
+/* Below fixes spacing issue with dynamically rending from the json file. */
+#days, #times {
+    white-space: pre; 
+}
+
+
+/* Events Page */
+
+
+
+/* Menu Page */
+
+
+
+/* About Page */
