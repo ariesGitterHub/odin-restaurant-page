@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development", // or 'production'     
+  mode: "development", // or 'production'
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
@@ -22,9 +22,9 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: ["file-loader"],
         type: "asset/resource",
       },
-
     ],
   },
 };

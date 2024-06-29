@@ -43,54 +43,40 @@ import "../styles/styles.css";
         times.id = "times";
         daysTimes.appendChild(times);
 
-        // TODO: add dynamically set days and times from daysTimes.json
-
-        // const addSchedule = (function (days) {
-        //     fetch("../data/daysTimes.json")
-        //       .then((response) => response.json())
-        //       .then((data) => {
-        //         // Use the loaded data
-        //         console.log(data);
-        //         data.forEach(dayOfWeek => {
-        //             dayOfWeek = document.createElement("p");
-        //             dayOfWeek.textContent = data.day;
-        //             days.appendChild(dayOfWeek);
-        //         })
-        //       })
-        //       .catch((error) => {
-        //         console.error("Error fetching data:", error);
-        //       })       
-
-        // })();
-
         const addSchedule = (function () {
             const days = document.querySelector("#days");
             const times = document.querySelector("#times");
 
-            fetch("../data/daysTimes.json")
-                .then((response) => response.json())
-                .then((data) => {
+            fetch("/data/daysTimes.json")
+
+// NEW***********************************************************************
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error("Network response was not ok");
+                }
+                return response.json();
+              })
+
+
+              .then((data) => {
                 data.forEach((dayOfWeek) => {
-                    const dayElement = document.createElement("p");
-                    dayElement.textContent = dayOfWeek.day;
-                    days.appendChild(dayElement);
+                  const dayElement = document.createElement("p");
+                  dayElement.textContent = dayOfWeek.day;
+                  days.appendChild(dayElement);
 
-                    // console.log(
-                    //     `${dayOfWeek.day} ${dayOfWeek.time}`
-                    // );
-
+                  // console.log(
+                  //     `${dayOfWeek.day} ${dayOfWeek.time}`
+                  // );
                 });
                 data.forEach((timeOfWeek) => {
-                    const timeElement = document.createElement("p");
-                    timeElement.textContent = timeOfWeek.time;
-                    times.appendChild(timeElement);
+                  const timeElement = document.createElement("p");
+                  timeElement.textContent = timeOfWeek.time;
+                  times.appendChild(timeElement);
                 });
-                })
-                .catch((error) => {
+              })
+              .catch((error) => {
                 console.error("Error fetching data:", error);
-
-
-                });
+              });
         })();
 
 
