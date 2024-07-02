@@ -14,7 +14,7 @@ import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg
 
         const homeImg = document.createElement("img");
         homeImg.id = "home-image";
-        homeImg.src = splashImageImage;
+        homeImg.src = splashImage;
         home.appendChild(homeImg);
 
         const hoursLocation = document.createElement("div");

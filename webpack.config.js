@@ -20,9 +20,18 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+
       {
-        test: /\.png/,
-        type: "asset/resource",
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/", // This is where the images will be copied
+            },
+          },
+        ],
       },
     ],
   },
