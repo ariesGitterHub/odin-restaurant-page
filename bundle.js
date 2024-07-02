@@ -56,7 +56,7 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/colin-maynard-HsG4OEPqGYc-unsplash.jpg\");\n\n//# sourceURL=webpack://odin-restaurant-page/./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/colin-maynard-HsG4OEPqGYc-unsplash.5e46d73531fd365812f8f25f105e1a1b.jpg\");\n\n//# sourceURL=webpack://odin-restaurant-page/./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg?");
 
 /***/ }),
 
