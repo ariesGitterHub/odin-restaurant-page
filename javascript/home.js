@@ -1,6 +1,8 @@
 import "../styles/styles.css";
 import daysTimesData from "../data/daysTimes.json";
 import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
+import hoursLogoKey from "../assets/images/logo-key.svg";
+import locationLogoLock from "../assets/images/logo-lock.svg";
 
     const content = document.querySelector("#content");
     // console.log("test");
@@ -23,7 +25,7 @@ import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg
 
         const logoKey = document.createElement("img");
         logoKey.classList.add("logo");
-        logoKey.src = "../assets/images/logo-key.svg";
+        logoKey.src = hoursLogoKey;
         logoKey.alt = "An ornate key";
         hoursLocation.appendChild(logoKey);
 
@@ -79,7 +81,7 @@ import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg
 
         const logoLock = document.createElement("img");
         logoLock.classList.add("logo");
-        logoLock.src = "../assets/images/logo-lock.svg";
+        logoLock.src = locationLogoLock;
         logoLock.alt = "An ornate lock";
         hoursLocation.appendChild(logoLock);
 
