@@ -16,7 +16,7 @@
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createHome: () => (/* binding */ createHome)\n/* harmony export */ });\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/daysTimes.json */ \"./data/daysTimes.json\");\n\n\n// import homeImage from \"../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg\";\n\n    const content = document.querySelector(\"#content\");\n    // console.log(\"test\");\n\n    function createHome() {\n\n        const home = document.createElement(\"div\");\n        home.id = \"home\";\n        // home.style.backgroundImage = `url(${homeImage})`;       \n        content.appendChild(home);\n\n        const homeImg = document.createElement(\"img\");\n        homeImg.id = \"home-image\";\n        homeImg.src = \"../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg\";\n        home.appendChild(homeImg);\n\n        const hoursLocation = document.createElement(\"div\");\n        hoursLocation.id = \"hours-location\";\n        home.appendChild(hoursLocation);\n\n        const logoKey = document.createElement(\"img\");\n        logoKey.classList.add(\"logo\");\n        logoKey.src = \"../assets/images/logo-key.svg\";\n        logoKey.alt = \"An ornate key\";\n        hoursLocation.appendChild(logoKey);\n\n        const hoursOfOperation = document.createElement(\"h2\");\n        hoursOfOperation.textContent = \"Hours of Operation\";\n        hoursLocation.appendChild(hoursOfOperation);\n\n        const open6DaysMsg = document.createElement(\"p\");\n        open6DaysMsg.classList.add(\"p-center\");\n        open6DaysMsg.textContent = \"Now open 6 days a week!\";\n        hoursLocation.appendChild(open6DaysMsg);\n\n        const break1 = document.createElement(\"br\");\n        hoursLocation.appendChild(break1);\n\n        const daysTimes = document.createElement(\"div\");\n        daysTimes.id = \"days-times\";\n        hoursLocation.appendChild(daysTimes);\n\n        const days = document.createElement(\"div\");\n        days.id = \"days\";\n        daysTimes.appendChild(days);\n\n        const times = document.createElement(\"div\");\n        times.id = \"times\";\n        daysTimes.appendChild(times);\n\n        const addSchedule = (function () {\n            const days = document.querySelector(\"#days\");\n            const times = document.querySelector(\"#times\");\n            _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__.forEach((dayOfWeek) => {\n                const dayElement = document.createElement(\"p\");\n                dayElement.textContent = dayOfWeek.day;\n                days.appendChild(dayElement);\n            });\n            _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__.forEach((timeOfWeek) => {\n                const timeElement = document.createElement(\"p\");\n                timeElement.textContent = timeOfWeek.time;\n                times.appendChild(timeElement);\n            });\n        })()\n\n        const break2 = document.createElement(\"br\");\n        hoursLocation.appendChild(break2);\n\n        const openLateMsg = document.createElement(\"p\");\n        openLateMsg.classList.add(\"p-center\");\n        openLateMsg.textContent = \"Open late for author talks & special events.\";\n        hoursLocation.appendChild(openLateMsg);\n\n        const break3 = document.createElement(\"br\");\n        hoursLocation.appendChild(break3);\n\n        const logoLock = document.createElement(\"img\");\n        logoLock.classList.add(\"logo\");\n        logoLock.src = \"../assets/images/logo-lock.svg\";\n        logoLock.alt = \"An ornate lock\";\n        hoursLocation.appendChild(logoLock);\n\n        const location = document.createElement(\"h2\");\n        location.textContent = \"Location\";\n        hoursLocation.appendChild(location);\n\n        const locationAddress = document.createElement(\"p\");\n        locationAddress.classList.add(\"p-center\");\n        locationAddress.textContent =\n        \"Find us secretly situated at 23 Miskatonic Avenue, Rear, in beautiful Arkham, MA 01930.\";\n        hoursLocation.appendChild(locationAddress);\n}\n\n\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./javascript/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createHome: () => (/* binding */ createHome)\n/* harmony export */ });\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/daysTimes.json */ \"./data/daysTimes.json\");\n/* harmony import */ var _assets_images_colin_maynard_HsG4OEPqGYc_unsplash_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg */ \"./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg\");\n\n\n\n\n    const content = document.querySelector(\"#content\");\n    // console.log(\"test\");\n\n    function createHome() {\n\n        const home = document.createElement(\"div\");\n        home.id = \"home\";\n        // home.style.backgroundImage = `url(${homeImage})`;       \n        content.appendChild(home);\n\n        const homeImg = document.createElement(\"img\");\n        homeImg.id = \"home-image\";\n        homeImg.src = _assets_images_colin_maynard_HsG4OEPqGYc_unsplash_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n        home.appendChild(homeImg);\n\n        const hoursLocation = document.createElement(\"div\");\n        hoursLocation.id = \"hours-location\";\n        home.appendChild(hoursLocation);\n\n        const logoKey = document.createElement(\"img\");\n        logoKey.classList.add(\"logo\");\n        logoKey.src = \"../assets/images/logo-key.svg\";\n        logoKey.alt = \"An ornate key\";\n        hoursLocation.appendChild(logoKey);\n\n        const hoursOfOperation = document.createElement(\"h2\");\n        hoursOfOperation.textContent = \"Hours of Operation\";\n        hoursLocation.appendChild(hoursOfOperation);\n\n        const open6DaysMsg = document.createElement(\"p\");\n        open6DaysMsg.classList.add(\"p-center\");\n        open6DaysMsg.textContent = \"Now open 6 days a week!\";\n        hoursLocation.appendChild(open6DaysMsg);\n\n        const break1 = document.createElement(\"br\");\n        hoursLocation.appendChild(break1);\n\n        const daysTimes = document.createElement(\"div\");\n        daysTimes.id = \"days-times\";\n        hoursLocation.appendChild(daysTimes);\n\n        const days = document.createElement(\"div\");\n        days.id = \"days\";\n        daysTimes.appendChild(days);\n\n        const times = document.createElement(\"div\");\n        times.id = \"times\";\n        daysTimes.appendChild(times);\n\n        const addSchedule = (function () {\n            const days = document.querySelector(\"#days\");\n            const times = document.querySelector(\"#times\");\n            _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__.forEach((dayOfWeek) => {\n                const dayElement = document.createElement(\"p\");\n                dayElement.textContent = dayOfWeek.day;\n                days.appendChild(dayElement);\n            });\n            _data_daysTimes_json__WEBPACK_IMPORTED_MODULE_1__.forEach((timeOfWeek) => {\n                const timeElement = document.createElement(\"p\");\n                timeElement.textContent = timeOfWeek.time;\n                times.appendChild(timeElement);\n            });\n        })()\n\n        const break2 = document.createElement(\"br\");\n        hoursLocation.appendChild(break2);\n\n        const openLateMsg = document.createElement(\"p\");\n        openLateMsg.classList.add(\"p-center\");\n        openLateMsg.textContent = \"Open late for author talks & special events.\";\n        hoursLocation.appendChild(openLateMsg);\n\n        const break3 = document.createElement(\"br\");\n        hoursLocation.appendChild(break3);\n\n        const logoLock = document.createElement(\"img\");\n        logoLock.classList.add(\"logo\");\n        logoLock.src = \"../assets/images/logo-lock.svg\";\n        logoLock.alt = \"An ornate lock\";\n        hoursLocation.appendChild(logoLock);\n\n        const location = document.createElement(\"h2\");\n        location.textContent = \"Location\";\n        hoursLocation.appendChild(location);\n\n        const locationAddress = document.createElement(\"p\");\n        locationAddress.classList.add(\"p-center\");\n        locationAddress.textContent =\n        \"Find us secretly situated at 23 Miskatonic Avenue, Rear, in beautiful Arkham, MA 01930.\";\n        hoursLocation.appendChild(locationAddress);\n}\n\n\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./javascript/home.js?");
 
 /***/ }),
 
@@ -47,6 +47,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://odin-restaurant-page/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg":
+/*!**************************************************************!*\
+  !*** ./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/colin-maynard-HsG4OEPqGYc-unsplash.jpg\");\n\n//# sourceURL=webpack://odin-restaurant-page/./assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg?");
 
 /***/ }),
 
@@ -191,6 +201,18 @@ eval("module.exports = /*#__PURE__*/JSON.parse('[{\"id\":1,\"day\":\"Monday: \",
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -205,6 +227,29 @@ eval("module.exports = /*#__PURE__*/JSON.parse('[{\"id\":1,\"day\":\"Monday: \",
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
