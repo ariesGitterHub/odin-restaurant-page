@@ -98,12 +98,12 @@ nav {
     display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        /* gap: .25rem; */
     /* padding-bottom: 1rem; */
 }
 
 button {
-    height: 3rem;
+    height: 2.25rem;
     width: 3rem;
     background: var(--blue-iron);
     /* background: radial-gradient(circle, var(--dk-rose) 10%, var(--rose) 95%); */
@@ -114,9 +114,9 @@ button {
         justify-content: center;
         align-items: center;
     font-family: var(--font-main);
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 900;
-    margin-top: .25rem;
+    margin: .25rem;
     outline: none;
 }
 
@@ -148,7 +148,7 @@ footer {
     font-family: var(--font-title);
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     padding: .5rem;
 
@@ -206,7 +206,7 @@ footer {
 }
 
 #hours-location p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .p-center {
