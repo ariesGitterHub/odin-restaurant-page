@@ -21,12 +21,8 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/i,
         loader: "file-loader",
-        options: {
-          name: "[name].[hash].[ext]",
-          outputPath: "images", // Output directory
-        },
       },
     ],
   },
