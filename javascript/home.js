@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import daysTimesData from "../data/daysTimes.json";
-// import homeImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
+import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
 
     const content = document.querySelector("#content");
     // console.log("test");
@@ -14,7 +14,7 @@ import daysTimesData from "../data/daysTimes.json";
 
         const homeImg = document.createElement("img");
         homeImg.id = "home-image";
-        homeImg.src = "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
+        homeImg.src = splashImageImage;
         home.appendChild(homeImg);
 
         const hoursLocation = document.createElement("div");
