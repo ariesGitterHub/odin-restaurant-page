@@ -27,7 +27,8 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[contenthash].[ext]",
+              // name: "[name].[contenthash].[ext]",
+              name: "[contenthash].[ext]",
               outputPath: "images/", // This is where the images will be copied
             },
           },

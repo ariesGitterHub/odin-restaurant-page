@@ -1,7 +1,7 @@
 import "../styles/styles.css";
-import { createHome } from "../javascript/home.js";
+import { createSplash } from "../javascript/splash.js";
 
-createHome()
+createSplash()
 
 const buttonListeners = (function () {
 

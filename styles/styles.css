@@ -8,10 +8,12 @@
     --white: #fafbfd;
     /* --white: red; */
     --white2: #fafbfd66;
+    --white3: #fafbfd80;
     --rose: #ee93b4;
     --dk-rose: #D34D70;
     --lt-leaf: #90c754;
     --dk-leaf: #175f3a;
+    --dk-leaf2: #175f3a80;
     --blue-iron: #01393a;
     --font-title:  "Dancing Script", cursive;
     --font-main: "Roboto Condensed", sans-serif;
@@ -26,20 +28,16 @@
 body {
     height: 100vh;
     width: 100vw;
-
     margin: auto;
 }
 
-header {
+/* header {
     position: fixed; 
     top: 0; 
     left: 0; 
     right: 0; 
     bottom: 82%;
     z-index: 10;
-    /* height: auto;
-    width: auto; */
-    /* background-color: var(--blue-iron); */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -62,7 +60,6 @@ header {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    /* padding: .5rem */
     padding: .5rem 0 .5rem 0;
 }
 
@@ -87,37 +84,64 @@ h1, h2 {
 
 .leaf {
     width: 2rem;
+} */
+
+/* nav {
+    height: auto;
+    width: 100vw;
+    background-color: var(--blue-iron);
+    border: 5px double var(--white);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+} */
+
+header {
+    /* height: 4rem;
+    padding: 1rem; */
 }
 
 nav {
-    height: auto;
-    width: 100vw;
-
-    /* background-color: var(--blue-iron); */
-    /* border-bottom: 5px double var(--white); */
+    height: fit-content;
+    z-index: 5;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 95%;
+    /* height: auto;
+    width: auto; */
+    background-color: var(--blue-iron);
+    border-bottom: 5px double var(--white);
+    color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
-        /* gap: .25rem; */
-    /* padding-bottom: 1rem; */
+    /* font-family: var(--font-title);
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: .95rem;
+    font-style: normal; */
+    padding: .35rem;
 }
 
 button {
-    height: 2.25rem;
-    width: 3rem;
-    background: var(--blue-iron);
+    height: 1.5rem;
+    width: 5rem;
+    background: var(--dk-leaf2);
     /* background: radial-gradient(circle, var(--dk-rose) 10%, var(--rose) 95%); */
     border: none;
-    border-radius: 3rem;
-    color: var(--lt-leaf);
+    border-radius: .35rem;
+    color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
-    font-family: var(--font-main);
-    font-size: .75rem;
+    font-family: var(--font-title);
+    font-size: 1rem;
     font-weight: 900;
-    margin: .25rem;
+    margin: .5rem;
     outline: none;
+    padding: .25rem;
 }
 
 button:hover {
@@ -132,6 +156,7 @@ button:active {
 }
 
 footer {
+    z-index: 5;
     position: fixed; 
     top: 95%; 
     left: 0; 
@@ -150,8 +175,97 @@ footer {
     font-weight: 900;
     font-size: 1rem;
     font-style: normal;
+    padding: 1rem;
+}
+/* 
+#MMM {
+        margin: .5rem;
+    outline: none;
     padding: .5rem;
+} */
 
+
+/* SPLASH PAGE */
+
+#splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#splash-image {
+    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#store-name-cont {
+    height: fit-content;
+    width: auto;
+    position: fixed; 
+    top: 45%; 
+    left: 0; 
+    right: 0; 
+    bottom: 50%;
+    z-index: 10;
+    background-color: var(--white3);
+    /* border-top: 5px double var(--white);
+        border-bottom: 5px double var(--white); */
+    color: var(--blue-iron);
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    font-family: var(--font-title);
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    padding: 2rem 0 2rem 0;
+}
+
+#store-name {
+    font-size: 2.75rem;
+}
+
+#store-name-sub {
+    font-size: 2rem;
+        white-space: pre; 
+}
+
+#store-name, #store-name-sub  {
+    z-index: 10;
+    margin: 0;
+    padding:0
+}
+
+#subtitle {
+        z-index: 10;
+    display: flex;
+}
+
+.leaf {
+    z-index: 10;
+    width: 2rem;
+}
+
+.circle {
+    height: 500px;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    /* z-index: 5;
+        position: fixed; 
+    top: 35%; 
+    left: 10%; 
+    right: 0; 
+    bottom: 50%; */
+    z-index: 3;
 }
 
 
@@ -169,14 +283,14 @@ footer {
 
 
 
-#home-image {
+/* #home-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers entire element */
-}
+  object-fit: cover;
+} */
 
 #hours-location {
     height: fit-content;
