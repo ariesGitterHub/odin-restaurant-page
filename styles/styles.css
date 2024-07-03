@@ -188,14 +188,18 @@ footer {
 /* SPLASH PAGE */
 
 #splash {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin:0;
+    overflow: hidden;
 }
 
 #splash-image {
+    height: 100vh;
+    width: auto;
     z-index: 0;
   position: absolute;
   top: 0;
@@ -209,10 +213,10 @@ footer {
     height: fit-content;
     width: auto;
     position: fixed; 
-    top: 45%; 
+    top: 25%; 
     left: 0; 
     right: 0; 
-    bottom: 50%;
+    bottom: 0%;
     z-index: 10;
     background-color: var(--white3);
     /* border-top: 5px double var(--white);
@@ -226,11 +230,11 @@ footer {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    padding: 2rem 0 2rem 0;
+    padding: 2.5rem 0 2.5rem 0;
 }
 
 #store-name {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
 }
 
 #store-name-sub {
