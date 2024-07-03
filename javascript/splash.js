@@ -24,7 +24,7 @@ function createSplash() {
 
     const storeNameCont = document.createElement("div");
     storeNameCont.id = "store-name-cont";
-    content.appendChild(storeNameCont);
+    splash.appendChild(storeNameCont);
 
     const storeName = document.createElement("h1");
     storeName.id = "store-name";
