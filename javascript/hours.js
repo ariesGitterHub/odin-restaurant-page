@@ -1,56 +1,64 @@
 import "../styles/styles.css";
 import daysTimesData from "../data/daysTimes.json";
-import splashImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
+import hoursImage from "../assets/images/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg";
 import hoursLogoKey from "../assets/images/logo-key.svg";
-import locationLogoLock from "../assets/images/logo-lock.svg";
 
     const content = document.querySelector("#content");
     // console.log("test");
 
-    function createHome() {
+    function createHours() {
 
-        const home = document.createElement("div");
-        home.id = "home";
-        // home.style.backgroundImage = `url(${homeImage})`;       
-        content.appendChild(home);
+        const hours = document.createElement("div");
+        hours.id = "hours"; 
+        hours.classList.add("wipe");  
+        content.appendChild(hours);
 
-        const homeImg = document.createElement("img");
-        homeImg.id = "home-image";
-        homeImg.src = splashImage;
-        home.appendChild(homeImg);
+        const hoursImg = document.createElement("img");
+        hoursImg.id = "hours-image";
+        hoursImg.classList.add("wipe");
+        hoursImg.src = hoursImage;
+        hours.appendChild(hoursImg);
 
-        const hoursLocation = document.createElement("div");
-        hoursLocation.id = "hours-location";
-        home.appendChild(hoursLocation);
+        const scheduleCont = document.createElement("div");
+        scheduleCont.id = "schedule-cont";
+        scheduleCont.classList.add("wipe");
+        hours.appendChild(scheduleCont);
 
         const logoKey = document.createElement("img");
-        logoKey.classList.add("logo");
+        logoKey.classList.add("logo", "wipe");
         logoKey.src = hoursLogoKey;
         logoKey.alt = "An ornate key";
-        hoursLocation.appendChild(logoKey);
+        scheduleCont.appendChild(logoKey);
 
         const hoursOfOperation = document.createElement("h2");
+        hoursOfOperation.id = "hours-of-operation";
+        hoursOfOperation.classList.add("wipe");
         hoursOfOperation.textContent = "Hours of Operation";
-        hoursLocation.appendChild(hoursOfOperation);
+        scheduleCont.appendChild(hoursOfOperation);
 
         const open6DaysMsg = document.createElement("p");
-        open6DaysMsg.classList.add("p-center");
+        open6DaysMsg.id = "open-6-days-msg";
+        open6DaysMsg.classList.add("p-center", "wipe");
         open6DaysMsg.textContent = "Now open 6 days a week!";
-        hoursLocation.appendChild(open6DaysMsg);
+        scheduleCont.appendChild(open6DaysMsg);
 
         const break1 = document.createElement("br");
-        hoursLocation.appendChild(break1);
+        break1.classList.add("wipe");
+        scheduleCont.appendChild(break1);
 
         const daysTimes = document.createElement("div");
         daysTimes.id = "days-times";
-        hoursLocation.appendChild(daysTimes);
+        daysTimes.classList.add("wipe");
+        scheduleCont.appendChild(daysTimes);
 
         const days = document.createElement("div");
         days.id = "days";
+        days.classList.add("wipe");
         daysTimes.appendChild(days);
 
         const times = document.createElement("div");
         times.id = "times";
+        times.classList.add("wipe");
         daysTimes.appendChild(times);
 
         const addSchedule = (function () {
@@ -69,33 +77,19 @@ import locationLogoLock from "../assets/images/logo-lock.svg";
         })()
 
         const break2 = document.createElement("br");
-        hoursLocation.appendChild(break2);
+        break2.classList.add("wipe");
+        scheduleCont.appendChild(break2);
 
         const openLateMsg = document.createElement("p");
-        openLateMsg.classList.add("p-center");
+        openLateMsg.id = "open-late-msg";
+        openLateMsg.classList.add("p-center", "wipe");
         openLateMsg.textContent = "Open late for author talks & special events.";
-        hoursLocation.appendChild(openLateMsg);
+        scheduleCont.appendChild(openLateMsg);
 
         const break3 = document.createElement("br");
-        hoursLocation.appendChild(break3);
+        break3.classList.add("wipe");
+        scheduleCont.appendChild(break3);
 
-        const logoLock = document.createElement("img");
-        logoLock.classList.add("logo");
-        logoLock.src = locationLogoLock;
-        logoLock.alt = "An ornate lock";
-        hoursLocation.appendChild(logoLock);
+    }
 
-        const location = document.createElement("h2");
-        location.textContent = "Location";
-        hoursLocation.appendChild(location);
-
-        const locationAddress = document.createElement("p");
-        locationAddress.classList.add("p-center");
-        locationAddress.textContent =
-        "Find us secretly situated at 23 Miskatonic Avenue, Rear, in beautiful Arkham, MA 01930.";
-        hoursLocation.appendChild(locationAddress);
-}
-
-
-
-export { createHome };
+export { createHours };

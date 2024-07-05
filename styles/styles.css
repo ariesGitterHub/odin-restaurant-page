@@ -31,20 +31,6 @@ body {
     margin: auto;
 }
 
-/* header {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 82%;
-    z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    padding: .5rem 0 .5rem 0;
-}
-
 #title {
     height: auto;
     width: 100vw;
@@ -84,22 +70,7 @@ h1, h2 {
 
 .leaf {
     width: 2rem;
-} */
-
-/* nav {
-    height: auto;
-    width: 100vw;
-    background-color: var(--blue-iron);
-    border: 5px double var(--white);
-    display: flex;
-        justify-content: center;
-        align-items: center;
-} */
-
-header {
-    /* height: 4rem;
-    padding: 1rem; */
-}
+} 
 
 nav {
     height: fit-content;
@@ -109,24 +80,17 @@ nav {
     left: 0; 
     right: 0; 
     bottom: 95%;
-    /* height: auto;
-    width: auto; */
     background-color: var(--blue-iron);
     border-bottom: 5px double var(--white);
     color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
-    /* font-family: var(--font-title);
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-size: .95rem;
-    font-style: normal; */
     padding: .2rem;
 }
 
 button {
-    height: 2.5rem;
+    height: 2rem;
     width: 5rem;
     /* background: var(--dk-leaf2); */
         background: var(--blue-iron);
@@ -140,16 +104,16 @@ button {
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 900;
-    margin: .5rem;
+    margin: .25rem;
     outline: none;
-    padding: .25rem;
+    padding: .2rem;
 }
 
 button:hover {
     /* background: var(--dk-rose); */
-    border-bottom: 5px solid var(--rose);
-        border-left: 2px solid var(--rose);
-                border-right: 2px solid var(--rose);
+    border-bottom: 1px solid var(--rose);
+        border-left: 1px solid var(--rose);
+                border-right: 1px solid var(--rose);
                 border-top: 1px solid var(--rose);
     color: var(--rose);
     transform: scale(1.2);
@@ -182,12 +146,6 @@ footer {
     font-style: normal;
     padding: 1rem;
 }
-/* 
-#MMM {
-        margin: .5rem;
-    outline: none;
-    padding: .5rem;
-} */
 
 
 /* SPLASH PAGE */
@@ -235,15 +193,15 @@ footer {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 1.25rem;
 }
 
 #store-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #store-name-sub {
-    font-size: 2rem;
+    font-size: 1.25rem;
         white-space: pre; 
 }
 
@@ -280,7 +238,7 @@ footer {
 
 /* Home Page */
 
-#home {
+#hours {
     height: 100vh;
     width: auto;
     /* background-color: red; */
@@ -292,19 +250,20 @@ footer {
 
 
 
-/* #home-image {
+#hours-image {
   position: absolute;
+      z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+} 
 
-#hours-location {
+#schedule-cont {
     height: fit-content;
     width: 300px;
-    z-index: 10;
+    z-index: 5;
     background-color: var(--white2);
     /* border: 5cm double var(--blue-iron); */
     border-radius: 3rem;
@@ -324,11 +283,11 @@ footer {
     /* padding-top: .5rem; */
 }
 
-#hours-location h2 {
+#schedule-cont h2 {
     font-size: 1.5rem;
 }
 
-#hours-location p {
+#schedule-cont p {
     font-size: 1rem;
 }
 
@@ -339,7 +298,7 @@ footer {
         flex-wrap: wrap;
 }
 
-#hours-location h2, #hours-location p {
+#schedule-cont h2, #schedule-cont p {
     font-weight: 900;
 }
 
