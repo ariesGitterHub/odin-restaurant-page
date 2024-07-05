@@ -1,5 +1,5 @@
 import "../styles/styles.css";
-import locationImage from "../assets/images/metin-ozer-eBUuTewGUXk-unsplash.jpg";
+import locationImage from "../assets/images/tiffany-chan-lT2hiMUACco-unsplash.jpg";
 import iconLocationImage from "../assets/images/icon-location.svg";
 import arkhamMapImage from "../assets/images/bluecollar-love-arkham-map-circle-only.png";
 

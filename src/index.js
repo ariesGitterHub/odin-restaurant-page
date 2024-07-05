@@ -1,20 +1,20 @@
 import "../styles/styles.css";
 import { createSplash } from "../javascript/splash.js";
 import { createAbout } from "../javascript/about.js";
-// import { createEvents } from "../javascript/events.js";
+import { createEvents } from "../javascript/events.js";
 import { createHours } from "../javascript/hours.js";
 import { createLocation } from "../javascript/location.js";
-// import { createMenu } from "../javascript/menu.js";
+import { createMenu } from "../javascript/menu.js";
 
 createSplash(); // Seems like the simplest way to institute a default on webpage load up.
 
 const buttonListeners = (function () {
-    const splash = document.querySelector("#splash");
-    const about = document.querySelector("#about");
-    const events = document.querySelector("#events");
-    const hours = document.querySelector("#hours");
-    const location = document.querySelector("#location");
-    const menu = document.querySelector("#menu");
+    // const splash = document.querySelector("#splash");
+    // const about = document.querySelector("#about");
+    // const events = document.querySelector("#events");
+    // const hours = document.querySelector("#hours");
+    // const location = document.querySelector("#location");
+    // const menu = document.querySelector("#menu");
 
     // const splashBtn = document.querySelector("#splash-btn");
     // const aboutBtn = document.querySelector("#about-btn");
@@ -56,10 +56,10 @@ const buttonListeners = (function () {
             createAbout();
         } 
 
-        // if (currentFunction === "isEvents") {
-        //     wipeOut();
-        //     createEvents();
-        // } 
+        if (currentFunction === "isEvents") {
+            wipeOut();
+            createEvents();
+        } 
         
         if (currentFunction === "isHours") {
             wipeOut();
@@ -69,6 +69,11 @@ const buttonListeners = (function () {
         if (currentFunction === "isLocation") {
             wipeOut();
             createLocation();
+        } 
+
+        if (currentFunction === "isMenu") {
+            wipeOut();
+            createMenu();
         } 
     }
 
@@ -97,13 +102,13 @@ const buttonListeners = (function () {
             currentFunction = "isAbout";
         }
 
-        // if (
-        //     event.target.id === "event-btn" &&
-        //     currentBtn !== "event-btn"
-        // ) {
-        //     currentBtn = "event-btn";
-        //     currentFunction = "isEvent";
-        // }
+        if (
+            event.target.id === "events-btn" &&
+            currentBtn !== "events-btn"
+        ) {
+            currentBtn = "events-btn";
+            currentFunction = "isEvents";
+        }
 
         if (event.target.id === "hours-btn" && 
             currentBtn !== "hours-btn"
@@ -120,13 +125,13 @@ const buttonListeners = (function () {
             currentFunction = "isLocation";
         }
 
-        // if (
-        //     event.target.id === "menu-btn" &&
-        //     currentBtn !== "menu-btn"
-        // ) {
-        //     currentBtn = "menu-btn";
-        //     currentFunction = "isMenu";
-        // }
+        if (
+            event.target.id === "menu-btn" &&
+            currentBtn !== "menu-btn"
+        ) {
+            currentBtn = "menu-btn";
+            currentFunction = "isMenu";
+        }
 
     isCurrentFunction();
     });

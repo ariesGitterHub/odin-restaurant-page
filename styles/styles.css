@@ -159,7 +159,7 @@ footer {
 
 /* ELEMENTS FOUND ON EVERY PAGE */
 
-#splash-image, #about-image, #hours-image, #location-image {
+#splash-image, #about-image, #events-image, #hours-image, #location-image, #menu-image {
     height: 100vh;
     width: auto;
     z-index: 0;
@@ -192,7 +192,7 @@ footer {
 
 /* SPLASH PAGE */
 
-#splash, #about, #hours, #location {
+#splash, #about, #events, #hours, #location, #menu {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -286,7 +286,7 @@ footer {
   object-fit: cover;
 }  */
 
-#schedule-cont, #about-cont, #location-cont {
+#schedule-cont, #about-cont, #events-cont, #location-cont, #menu-cont {
     height: fit-content;
     width: 300px;
     z-index: 5;
@@ -311,7 +311,7 @@ footer {
     font-size: var(--h2);
 }
 
-#schedule-cont p, #about-cont p,  #location-cont p {
+#schedule-cont p, #about-cont p, #events-cont p, #location-cont p, #menu-cont p {
     font-size: var(--p);
 }
 
