@@ -16,6 +16,8 @@ https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHIfZnqWqSu9wfIDBtAAn
 
 Icon images taken from: https://www.svgrepo.com/collection/floral-design/ .
 
-Lock logo taken from: https://www.svgrepo.com/svg/15543/keyhole-in-a-circle-with-flowers-design
+Location page icon: https://www.svgrepo.com/svg/15543/keyhole-in-a-circle-with-flowers-design
 
-key logo taken from: https://www.svgrepo.com/svg/19713/vintage-oval-key-shape
+Hours page icon: https://www.svgrepo.com/svg/19713/vintage-oval-key-shape
+
+About page icon: https://www.svgrepo.com/svg/63571/floral-vintage-design-with-symmetry

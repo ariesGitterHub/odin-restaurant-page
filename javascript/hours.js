@@ -1,7 +1,7 @@
 import "../styles/styles.css";
 import daysTimesData from "../data/daysTimes.json";
 import hoursImage from "../assets/images/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg";
-import hoursLogoKey from "../assets/images/logo-key.svg";
+import iconHoursImage from "../assets/images/icon-hours.svg";
 
     const content = document.querySelector("#content");
     // console.log("test");
@@ -24,11 +24,11 @@ import hoursLogoKey from "../assets/images/logo-key.svg";
         scheduleCont.classList.add("wipe");
         hours.appendChild(scheduleCont);
 
-        const logoKey = document.createElement("img");
-        logoKey.classList.add("logo", "wipe");
-        logoKey.src = hoursLogoKey;
-        logoKey.alt = "An ornate key";
-        scheduleCont.appendChild(logoKey);
+        const iconHours = document.createElement("img");
+        iconHours.classList.add("logo", "wipe");
+        iconHours.src = iconHoursImage;
+        iconHours.alt = "An ornate key";
+        scheduleCont.appendChild(iconHours);
 
         const hoursOfOperation = document.createElement("h2");
         hoursOfOperation.id = "hours-of-operation";

@@ -100,17 +100,18 @@ button {
         background: var(--blue-iron);
     /* background: radial-gradient(circle, var(--dk-rose) 10%, var(--rose) 95%); */
     border: none;
-    border-radius: 1rem;
+    border-radius: 5rem;
     color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 900;
     /* margin: .25rem; */
     outline: none;
-    padding: .2rem;
+    padding: .25rem;
 }
 
 button:hover {
@@ -121,7 +122,11 @@ button:hover {
                 border-right: 1px solid var(--rose);
                 border-top: 1px solid var(--rose); */
     color: var(--rose);
-    transform: scale(1.15);
+    /* transform: scale(1.15); */
+}
+
+button:focus {
+    background-color: var(--dk-leaf );
 }
 
 button:active {
@@ -154,7 +159,7 @@ footer {
 
 /* ELEMENTS FOUND ON EVERY PAGE */
 
-#splash-image, #hours-image, #location-image {
+#splash-image, #about-image, #hours-image, #location-image {
     height: 100vh;
     width: auto;
     z-index: 0;
@@ -170,6 +175,10 @@ footer {
     height: 6rem;
 }
 
+.logo2 { 
+    height: 9rem;
+}
+
 .pad-top-bot {
     margin: 1.35rem 0 1.35rem 0;
 }
@@ -183,7 +192,7 @@ footer {
 
 /* SPLASH PAGE */
 
-#splash, #hours, #location {
+#splash, #about, #hours, #location {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -277,7 +286,7 @@ footer {
   object-fit: cover;
 }  */
 
-#schedule-cont, #location-cont {
+#schedule-cont, #about-cont, #location-cont {
     height: fit-content;
     width: 300px;
     z-index: 5;
@@ -298,11 +307,11 @@ footer {
 
 
 
-#hours-of-operation, #location-header {
+#hours-of-operation, #about-header, #location-header {
     font-size: var(--h2);
 }
 
-#schedule-cont p, #location-cont p {
+#schedule-cont p, #about-cont p,  #location-cont p {
     font-size: var(--p);
 }
 
@@ -314,7 +323,7 @@ footer {
 }
 
 #schedule-cont h2, #schedule-cont p {
-    font-weight: 900;
+    font-weight: 500;
 }
 
 #days-times {

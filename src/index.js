@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import { createSplash } from "../javascript/splash.js";
-// import { createAbout } from "../javascript/about.js";
+import { createAbout } from "../javascript/about.js";
 // import { createEvents } from "../javascript/events.js";
 import { createHours } from "../javascript/hours.js";
 import { createLocation } from "../javascript/location.js";
@@ -51,10 +51,10 @@ const buttonListeners = (function () {
             createSplash();
         } 
 
-        // if (currentFunction === "isAbout") {
-        //     wipeOut();
-        //     createAbout();
-        // } 
+        if (currentFunction === "isAbout") {
+            wipeOut();
+            createAbout();
+        } 
 
         // if (currentFunction === "isEvents") {
         //     wipeOut();
@@ -89,13 +89,13 @@ const buttonListeners = (function () {
         currentFunction = "isSplash";
         }
 
-        // if (
-        //     event.target.id === "about-btn" &&
-        //     currentBtn !== "about-btn"
-        // ) {
-        //     currentBtn = "about-btn";
-        //     currentFunction = "isAbout";
-        // }
+        if (
+            event.target.id === "about-btn" &&
+            currentBtn !== "about-btn"
+        ) {
+            currentBtn = "about-btn";
+            currentFunction = "isAbout";
+        }
 
         // if (
         //     event.target.id === "event-btn" &&
