@@ -12,11 +12,15 @@
     --rose: #ee93b4;
     --dk-rose: #D34D70;
     --lt-leaf: #90c754;
+    --lt-leaf2: #8fc754d8; 
     --dk-leaf: #175f3a;
     --dk-leaf2: #175f3a80;
     --blue-iron: #01393a;
     --font-title:  "Dancing Script", cursive;
     --font-main: "Roboto Condensed", sans-serif;
+    --h1: 2.25rem;
+    --h2: 1.5rem;
+    --p: 1.25rem
 }
 
 * {
@@ -31,7 +35,7 @@ body {
     margin: auto;
 }
 
-#title {
+/* #title {
     height: auto;
     width: 100vw;
     background-color: var(--blue-iron);
@@ -47,7 +51,7 @@ body {
     font-weight: 900;
     font-style: normal;
     padding: .5rem 0 .5rem 0;
-}
+} */
 
 #subtitle {
     display: flex;
@@ -55,22 +59,22 @@ body {
         align-items: center;
 }
 
-h1 {
-    font-size: 2.25rem;
+/* h1 {
+
 }
 
 h2 {
-    font-size: 1.5rem;
-}
+
+} */
 
 h1, h2 {
     margin: 0;
     padding:0
 }
 
-.leaf {
+/* .leaf {
     width: 2rem;
-} 
+}  */
 
 nav {
     height: fit-content;
@@ -86,12 +90,12 @@ nav {
     display: flex;
         justify-content: center;
         align-items: center;
-    padding: .2rem;
+    padding: .5rem;
 }
 
 button {
     height: 2rem;
-    width: 5rem;
+    width: 4.25rem;
     /* background: var(--dk-leaf2); */
         background: var(--blue-iron);
     /* background: radial-gradient(circle, var(--dk-rose) 10%, var(--rose) 95%); */
@@ -104,19 +108,20 @@ button {
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 900;
-    margin: .25rem;
+    /* margin: .25rem; */
     outline: none;
     padding: .2rem;
 }
 
 button:hover {
     /* background: var(--dk-rose); */
-    border-bottom: 1px solid var(--rose);
+    border: .75px double var(--rose);
+    /* border-bottom: 1px solid var(--rose);
         border-left: 1px solid var(--rose);
                 border-right: 1px solid var(--rose);
-                border-top: 1px solid var(--rose);
+                border-top: 1px solid var(--rose); */
     color: var(--rose);
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 button:active {
@@ -147,20 +152,9 @@ footer {
     padding: 1rem;
 }
 
+/* ELEMENTS FOUND ON EVERY PAGE */
 
-/* SPLASH PAGE */
-
-#splash {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:0;
-    overflow: hidden;
-}
-
-#splash-image {
+#splash-image, #hours-image, #location-image {
     height: 100vh;
     width: auto;
     z-index: 0;
@@ -171,6 +165,45 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
+.logo { 
+    height: 6rem;
+}
+
+.pad-top-bot {
+    margin: 1.35rem 0 1.35rem 0;
+}
+
+#arkham-map-image {
+  height: auto;  
+  width: 250px;
+  margin: .5rem;
+}
+
+
+/* SPLASH PAGE */
+
+#splash, #hours, #location {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    overflow: hidden;
+}
+
+/* #splash-image {
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
 
 #store-name-cont {
     height: fit-content;
@@ -193,15 +226,15 @@ footer {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    padding: 1.25rem;
+    padding: .25rem;
 }
 
 #store-name {
-    font-size: 2rem;
+    font-size: var(--h1);
 }
 
 #store-name-sub {
-    font-size: 1.25rem;
+    font-size: var(--h2);
         white-space: pre; 
 }
 
@@ -221,36 +254,20 @@ footer {
     width: 2rem;
 }
 
-.circle {
-    height: 500px;
-    width: auto;
-    align-self: center;
-    justify-self: center;
-    /* z-index: 5;
-        position: fixed; 
-    top: 35%; 
-    left: 10%; 
-    right: 0; 
-    bottom: 50%; */
-    z-index: 3;
-}
 
+/* HOURS PAGE */
 
-/* Home Page */
-
-#hours {
+/* #hours {
     height: 100vh;
     width: auto;
-    /* background-color: red; */
+
     display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-}
+} */
 
-
-
-#hours-image {
+/* #hours-image {
   position: absolute;
       z-index: 0;
   top: 0;
@@ -258,13 +275,13 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} 
+}  */
 
-#schedule-cont {
+#schedule-cont, #location-cont {
     height: fit-content;
     width: 300px;
     z-index: 5;
-    background-color: var(--white2);
+    background-color: var(--lt-leaf2);
     /* border: 5cm double var(--blue-iron); */
     border-radius: 3rem;
     color: var(--blue-iron);
@@ -274,21 +291,19 @@ footer {
         align-items: center;
     /* opacity: .8; */
     font-family: var(--font-main);
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
     text-align: center;
 }
 
-.logo {
-    height: 4rem;
-    /* padding-top: .5rem; */
+
+
+#hours-of-operation, #location-header {
+    font-size: var(--h2);
 }
 
-#schedule-cont h2 {
-    font-size: 1.5rem;
-}
-
-#schedule-cont p {
-    font-size: 1rem;
+#schedule-cont p, #location-cont p {
+    font-size: var(--p);
 }
 
 .p-center {

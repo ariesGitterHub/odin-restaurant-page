@@ -12,7 +12,7 @@ https://unsplash.com/photos/woman-wearing-white-shirt-standing-inside-library-3E
 
 https://unsplash.com/photos/usa-flag-on-street-during-daytime-lT2hiMUACco
 
-
+https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHIfZnqWqSu9wfIDBtAAnFz8Kazv3zXV2PKsN3adlweYalAA_R_REpFH8Sd9OgPh6PqJ2sQr2gPpyZJnYiORAIyPAx6yZWrCCSEm1RJMYRokMGCYixJsnvNXqisDecB8i1cBl2-aPu3P1T/s1600/bluecollar+love+arkham+map.jpg
 
 Icon images taken from: https://www.svgrepo.com/collection/floral-design/ .
 

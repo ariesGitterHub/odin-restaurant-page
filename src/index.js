@@ -1,10 +1,12 @@
 import "../styles/styles.css";
 import { createSplash } from "../javascript/splash.js";
-
-
-
+// import { createAbout } from "../javascript/about.js";
+// import { createEvents } from "../javascript/events.js";
 import { createHours } from "../javascript/hours.js";
+import { createLocation } from "../javascript/location.js";
+// import { createMenu } from "../javascript/menu.js";
 
+createSplash(); // Seems like the simplest way to institute a default on webpage load up.
 
 const buttonListeners = (function () {
     const splash = document.querySelector("#splash");
@@ -14,15 +16,14 @@ const buttonListeners = (function () {
     const location = document.querySelector("#location");
     const menu = document.querySelector("#menu");
 
-    const splashBtn = document.querySelector("#splash-btn");
-    const aboutBtn = document.querySelector("#about-btn");
-    const eventsBtn = document.querySelector("#events-btn");
-    const hoursBtn = document.querySelector("#hours-btn");
-    const locationBtn = document.querySelector("#location-btn");
-    const menuBtn = document.querySelector("#menu-btn");
+    // const splashBtn = document.querySelector("#splash-btn");
+    // const aboutBtn = document.querySelector("#about-btn");
+    // const eventsBtn = document.querySelector("#events-btn");
+    // const hoursBtn = document.querySelector("#hours-btn");
+    // const locationBtn = document.querySelector("#location-btn");
+    // const menuBtn = document.querySelector("#menu-btn");
 
-    const content = document.querySelector("#content");
-    
+    const content = document.querySelector("#content");  
 
     function wipeOut() {
         const wipe = content.querySelectorAll(".wipe"); 
@@ -31,76 +32,102 @@ const buttonListeners = (function () {
     });   
     }
 
-
     const nav = document.querySelector("nav");
 
-    let currentBtn = "splash-btn";
-    let currentFunction = "isSplash";
+    let currentBtn = "";
+    let currentFunction = "";
     
     console.log(currentBtn);
     console.log(currentFunction);
 
     function isCurrentFunction() {
+        // if (currentFunction === "") {
+        //   wipeOut();
+        //   createSplash();
+        // } 
+
         if (currentFunction === "isSplash") {
             wipeOut();
             createSplash();
-            //NEED TO WIPE OUT PRIOR FUNCTION STATES!!!!!!!
         } 
+
+        // if (currentFunction === "isAbout") {
+        //     wipeOut();
+        //     createAbout();
+        // } 
+
+        // if (currentFunction === "isEvents") {
+        //     wipeOut();
+        //     createEvents();
+        // } 
         
         if (currentFunction === "isHours") {
             wipeOut();
             createHours();
         }
+
+        if (currentFunction === "isLocation") {
+            wipeOut();
+            createLocation();
+        } 
     }
 
 
     nav.addEventListener("click", (event) => {
+ let currentBtn = "";
+            console.log(currentBtn);
+            console.log(currentFunction);
 
         const isButton = event.target.nodeName === "BUTTON";
         if (!isButton) {
-            return;
+            return
         }
         console.dir(event.target.id);
+
         if (event.target.id === "splash-btn" && currentBtn !== "splash-btn") {
           currentBtn = "splash-btn";
         currentFunction = "isSplash";
         }
-        // if (event.target.id === "about-btn") {
-        //     splash.style.display = "none";
-        //     about.style.display = "flex";
-        //     events.style.display = "none";
-        //     hours.style.display = "none";
-        //     location.style.display = "none";
-        //     menu.style.display = "none";
+
+        // if (
+        //     event.target.id === "about-btn" &&
+        //     currentBtn !== "about-btn"
+        // ) {
+        //     currentBtn = "about-btn";
+        //     currentFunction = "isAbout";
         // }
-        // if (event.target.id === "events-btn") {
-        //     splash.style.display = "none";
-        //     about.style.display = "none";
-        //     events.style.display = "flex";
-        //     hours.style.display = "none";
-        //     location.style.display = "none";
-        //     menu.style.display = "none";
+
+        // if (
+        //     event.target.id === "event-btn" &&
+        //     currentBtn !== "event-btn"
+        // ) {
+        //     currentBtn = "event-btn";
+        //     currentFunction = "isEvent";
         // }
-        if (event.target.id === "hours-btn" && currentBtn !== "hours-btn") {
+
+        if (event.target.id === "hours-btn" && 
+            currentBtn !== "hours-btn"
+        ) {
             currentBtn = "hours-btn";
             currentFunction = "isHours";
         }
-        // if (event.target.id === "location-btn") {
-        //     splash.style.display = "none";
-        //     about.style.display = "none";
-        //     events.style.display = "none";
-        //     hours.style.display = "none";
-        //     location.style.display = "flex";
-        //     menu.style.display = "none";
+
+        if (
+            event.target.id === "location-btn" &&
+            currentBtn !== "location-btn"
+        ) {
+            currentBtn = "location-btn";
+            currentFunction = "isLocation";
+        }
+
+        // if (
+        //     event.target.id === "menu-btn" &&
+        //     currentBtn !== "menu-btn"
+        // ) {
+        //     currentBtn = "menu-btn";
+        //     currentFunction = "isMenu";
         // }
-        // if (event.target.id === "menu-btn") {
-        //     splash.style.display = "none";
-        //     about.style.display = "none";
-        //     events.style.display = "none";
-        //     hours.style.display = "none";
-        //     location.style.display = "none";
-        //     menu.style.display = "flex";
-        // }
+
     isCurrentFunction();
     });
 
