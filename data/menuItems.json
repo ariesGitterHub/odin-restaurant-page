@@ -3,46 +3,82 @@
     "id": 0,
     "item": "Black Death Coffee",
     "price": "$10.00",
-    "description": "'The savior of students.' This endless refill of our special organic coffee blend is just what our local Miskatonic University students need to buckle down and make the grade."
+    "description": "This endless refill of our special organic coffee blend is just what our local Miskatonic University students need to keep fueled up and alert. Milk (soy, almond, dairy), sugar, etc., available at coffee bar."
   },
   {
     "id": 1,
     "item": "Hidden Garden Tea",
     "price": "$3.00",
-    "description": "Choose from a wide assortment of popular teas imported from around the globe."
+    "description": "Choose from a wide assortment of popular teas imported from around the globe. Staff favorites include Leng Black Lotus and Kadath Sleeptyme Brew. Milk (soy, almond, dairy), sugar, etc., available at coffee bar."
   },
   {
     "id": 2,
-    "item": "Black Bean Sliders",
-    "price": "$12.00",
-    "description": "Three black bean sliders cooked to your liking. All sliders come infused with our special blend of spices; lettuce, onions, and tomatoes can be added $3.00."
+    "item": "Bottled Drinks",
+    "price": "$2.50",
+    "description": "Italian Sodas, Shrubs, and bottled drinks are also available."
   },
   {
     "id": 3,
-    "item": "Scholar's Scrum",
-    "price": "$5.00",
-    "description": "One egg, served with avocado, and salsa on your choice of toast."
+    "item": "Black Bean Sliders",
+    "price": "$12.00",
+    "description": "Three black bean sliders cooked to your liking. All sliders come infused with our special blend of spices. Lettuce, onions, and tomatoes can be added for $3.00 extra."
   },
   {
     "id": 4,
-    "item": "Hidden Garden Salad",
-    "price": "$8.00",
-    "description": "Hearty salad with fresh vegetables from local Arkham gardens."
+    "item": "Veggie Rice Bowl",
+    "price": "$12.00",
+    "description": "A generous bowl of jasmine rice with roasted vegetables, greens, tofu, cucumbers, topped with nori flakes, sesame seeds, and your choice of Thai dressing or ginger miso dressing."
   },
   {
     "id": 5,
-    "item": "Arkham Seaside Chili",
-    "price": "Cup:$4.00, Bowl: $7.00",
-    "description": "Try our spicy crab meat and scallop chili; made fresh daily from local catches."
+    "item": "Daniel Webster Wrap",
+    "price": "$12.00",
+    "description": "A delicious barbecue wrap made with tofu, barbecue sauce, pickles, slaw, and greens in a tortilla pouch."
   },
   {
     "id": 6,
+    "item": "New England Melt",
+    "price": "$14.00",
+    "description": "A classic New England melt, made with walnut spread, cranberries, and greens, all on a sourdough roll. WARNING FOR NUT ALLERGY SUFFERERS: This sandwich contains walnuts!"
+  },
+  {
+    "id": 7,
+    "item": "Sunshine Wrap",
+    "price": "$12.00",
+    "description": "This zesty sunflower seed pate wrap is made with cucumbers, carrots, Thai dressing, and greens--all stuffed lovingly into in a soft tortilla."
+  },
+  {
+    "id": 8,
+    "item": "Scholar's Scrumdiddle",
+    "price": "$5.00",
+    "description": "One egg, served with avocado and salsa on your choice of toast (i.e., rye, wheat, or white bread toast)."
+  },
+  {
+    "id": 9,
+    "item": "Hidden Garden Salad",
+    "price": "$8.00",
+    "description": "Hearty salad with fresh vegetables from locally sourced farms in the beautiful Dunwich river valley. Please note that there will be seasonal variation and substitute vegetables may be added."
+  },
+  {
+    "id": 10,
+    "item": "Innsmouth Seaside Chili",
+    "price": "Cup:$4.00, Bowl: $7.00",
+    "description": "Try our spicy crab meat and scallop chili; made fresh daily from local catches made by the proud fisher-folk of nearby Innsmouth Bay."
+  },
+  {
+    "id": 11,
     "item": "Soup of the Day",
     "price": "Cup:$4.00, Bowl: $7.00",
     "description": "Made fresh daily, inquire for type."
   },
   {
-    "id": 7,
+    "id": 12,
+    "item": "Smidge Cake",
+    "price": "$5.00",
+    "description": "Cupcakes beware: these adorable and delicious mini-cakes are a new addition. Inquire for the smidge cake type of the day."
+  },
+  {
+    "id": 13,
     "item": "Poe Honey Square",
     "price": "$5.00",
     "description": "Taste history and try the 'quite satisfactory, nearing scrumptious' honey cake squares eaten by Edgar Allen Poe himself when he visited our store in the 19th century. Same family recipe!"

@@ -32,6 +32,7 @@
 body {
     height: 100vh;
     width: 100vw;
+        background-color: var(--blue-iron);
     margin: auto;
 }
 
@@ -190,7 +191,7 @@ footer {
 }
 
 
-#splash, #about, #events, #hours, #location {
+#splash, #about, #hours, #location {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -275,7 +276,7 @@ footer {
   object-fit: cover;
 }  */
 
-#schedule-cont, #about-cont, #events-cont, #location-cont {
+#schedule-cont, #about-cont, #location-cont {
     height: fit-content;
     width: 300px;
     z-index: 5;
@@ -294,64 +295,79 @@ footer {
     text-align: center;
 }
 
-#menu-cont {
-    height: 800px;
-    width: 500px;
-    z-index: 5;
-    /* background-color: var(--lt-leaf2); */
 
-    /* border-radius: 3rem; */
-    /* color: var(--white); */
-    /* display: grid;
-grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); */
-
-display: flex;
-flex-direction: column;
-    gap: 10px;
-
-    font-family: var(--font-main);
-    margin: 0;
-    /* padding: 0 1rem 1rem 1rem; */
-    text-align: center;
-    overflow: hidden;
-}
-
-#menu {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--blue-iron);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+#events, #menu {
+    height: auto;
+    width: auto;
+    /* background-color: var(--blue-iron); */
+    /* display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin:auto;
+    align-items: start; */
+    /* gap: 1rem; */
+    margin: auto;
     padding: 2rem;
 }
 
-.menu-square {
+#events-cont, #menu-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin: 3rem;
+}
+
+.event-square {
     height: fit-content;
-    width: fit-content;
-    background-color: var(--white3);
-        border-radius: 2rem;
+    width: 300px;
+    z-index: 2;
+    background-color: var(--rose);
+    border-radius: 2rem;
     color: var(--blue-iron);
     display: flex;
-            flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    /* gap: 10px; */
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    margin: .5rem;
     padding: 1rem;
 }
 
 
+.menu-square {
+    height: 225px;
+    width: 300px;
+    z-index: 2;
+    background-color: var(--white);
+    border-radius: 2rem;
+    color: var(--blue-iron);
+    display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.item, .what {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.price, .when {
+    font-style: italic;
+}
+
+.description, .blurb {
+    font-size: .9rem;
+}
 
 #hours-of-operation, #about-header, #location-header, #menu-header {
     font-size: var(--h2);
 }
 
-#schedule-cont p, #about-cont p, #events-cont p, #location-cont p, #menu-cont p {
+#schedule-cont p, #about-cont p, #location-cont p {
     font-size: var(--p);
 }
 

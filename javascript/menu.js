@@ -10,16 +10,16 @@ function createMenu() {
   menu.classList.add("wipe");
   content.appendChild(menu);
 
-  // const menuImg = document.createElement("img");
-  // menuImg.id = "menu-image";
-  // menuImg.classList.add("wipe");
-  // menuImg.src = menuImage;
-  // menu.appendChild(menuImg);
+  const menuImg = document.createElement("img");
+  menuImg.id = "menu-image";
+  menuImg.classList.add("wipe");
+  menuImg.src = menuImage;
+  menu.appendChild(menuImg);
 
-  // const menuCont = document.createElement("div");
-  // menuCont.id = "menu-cont";
-  // menuCont.classList.add("wipe");
-  // menu.appendChild(menuCont);
+  const menuCont = document.createElement("div");
+  menuCont.id = "menu-cont";
+  menuCont.classList.add("wipe");
+  menu.appendChild(menuCont);
 
   // const menuHeader = document.createElement("h2");
   // menuHeader.id = "menu-header";
@@ -37,34 +37,71 @@ function createMenu() {
   // times.classList.add("wipe");
   // daysTimes.appendChild(times);
 
-  const addMenuItems = (function () {
-    
-    for (let i = 0; i < menuItemsData.length; i++) {
+  //   const addMenuItems = (function () {
 
+  //     for (let i = 0; i < menuItemsData.length; i++) {
+
+  //       const menuSquare = document.createElement("div");
+  //       menuSquare.id = `${i}`;
+  //       menuSquare.classList.add("wipe", "menu-square");
+
+  //       const item = document.createElement("p");
+  //       item.classList.add("wipe", "item");
+  //       item.textContent = `item${i}`;
+  //       menuSquare.appendChild(item);
+
+  //       const price = document.createElement("p");
+  //       price.classList.add("wipe", "price");
+  //       price.textContent = `price${i}`;
+  //       menuSquare.appendChild(price);
+
+  //       const description = document.createElement("p");
+  //       description.classList.add("wipe", "description");
+  //       description.textContent = `description${i}`;
+  //       menuSquare.appendChild(description);
+
+  //       // menuCont.appendChild(menuSquare);
+
+  //       menu.appendChild(menuSquare);
+
+  //     }
+  //   })();
+  // }
+
+  const addMenuItems = (function () {
+
+  menuItemsData.forEach((menuItem) => {
       const menuSquare = document.createElement("div");
-      menuSquare.id = `${i}`;
+      // menuSquare.id = `${i}`;
       menuSquare.classList.add("wipe", "menu-square");
 
       const item = document.createElement("p");
       item.classList.add("wipe", "item");
-      item.textContent = `item${i}`;
+      item.textContent = menuItem.item;
       menuSquare.appendChild(item);
 
       const price = document.createElement("p");
       price.classList.add("wipe", "price");
-      price.textContent = `price${i}`;
+      price.textContent = `(${menuItem.price})`;
       menuSquare.appendChild(price);
+
+      const break1 = document.createElement("br");
+      break1.classList.add("wipe");
+      menuSquare.appendChild(break1);
 
       const description = document.createElement("p");
       description.classList.add("wipe", "description");
-      description.textContent = `description${i}`;
+      description.textContent = menuItem.description;
       menuSquare.appendChild(description);
 
       // menuCont.appendChild(menuSquare);
 
-      menu.appendChild(menuSquare);
+      menuCont.appendChild(menuSquare);
 
-    }
+
+  });
+
+
   })();
 }
 
