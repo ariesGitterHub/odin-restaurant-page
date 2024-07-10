@@ -37,7 +37,7 @@ function createAbout() {
     aboutBlurb.id = "about-blurb";
     aboutBlurb.classList.add("p-center", "wipe");
     aboutBlurb.textContent =
-        "Since 1766, this humble shop, our family's sole endeavor, has worked to enlighten and transcend the common by providing a sacred redoubt for the debate and exchange of ideas, both great and small.";
+        "Since 1766, this humble shop has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas.";
     aboutCont.appendChild(aboutBlurb);
 
     const break1 = document.createElement("br");

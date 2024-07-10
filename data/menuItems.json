@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "item": "Black Death Coffee",
+    "price": "$10.00",
+    "description": "'The savior of students.' This endless refill of our special organic coffee blend is just what our local Miskatonic University students need to buckle down and make the grade."
+  },
+  {
+    "id": 1,
+    "item": "Hidden Garden Tea",
+    "price": "$3.00",
+    "description": "Choose from a wide assortment of popular teas imported from around the globe."
+  },
+  {
+    "id": 2,
+    "item": "Black Bean Sliders",
+    "price": "$12.00",
+    "description": "Three black bean sliders cooked to your liking. All sliders come infused with our special blend of spices; lettuce, onions, and tomatoes can be added $3.00."
+  },
+  {
+    "id": 3,
+    "item": "Scholar's Scrum",
+    "price": "$5.00",
+    "description": "One egg, served with avocado, and salsa on your choice of toast."
+  },
+  {
+    "id": 4,
+    "item": "Hidden Garden Salad",
+    "price": "$8.00",
+    "description": "Hearty salad with fresh vegetables from local Arkham gardens."
+  },
+  {
+    "id": 5,
+    "item": "Arkham Seaside Chili",
+    "price": "Cup:$4.00, Bowl: $7.00",
+    "description": "Try our spicy crab meat and scallop chili; made fresh daily from local catches."
+  },
+  {
+    "id": 6,
+    "item": "Soup of the Day",
+    "price": "Cup:$4.00, Bowl: $7.00",
+    "description": "Made fresh daily, inquire for type."
+  },
+  {
+    "id": 7,
+    "item": "Poe Honey Square",
+    "price": "$5.00",
+    "description": "Taste history and try the 'quite satisfactory, nearing scrumptious' honey cake squares eaten by Edgar Allen Poe himself when he visited our store in the 19th century. Same family recipe!"
+  }
+]

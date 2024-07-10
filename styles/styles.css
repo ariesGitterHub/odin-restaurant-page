@@ -190,9 +190,7 @@ footer {
 }
 
 
-/* SPLASH PAGE */
-
-#splash, #about, #events, #hours, #location, #menu {
+#splash, #about, #events, #hours, #location {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -202,17 +200,8 @@ footer {
     overflow: hidden;
 }
 
-/* #splash-image {
-    height: 100vh;
-    width: auto;
-    z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+
+
 
 #store-name-cont {
     height: fit-content;
@@ -286,7 +275,7 @@ footer {
   object-fit: cover;
 }  */
 
-#schedule-cont, #about-cont, #events-cont, #location-cont, #menu-cont {
+#schedule-cont, #about-cont, #events-cont, #location-cont {
     height: fit-content;
     width: 300px;
     z-index: 5;
@@ -305,9 +294,60 @@ footer {
     text-align: center;
 }
 
+#menu-cont {
+    height: 800px;
+    width: 500px;
+    z-index: 5;
+    /* background-color: var(--lt-leaf2); */
+
+    /* border-radius: 3rem; */
+    /* color: var(--white); */
+    /* display: grid;
+grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); */
+
+display: flex;
+flex-direction: column;
+    gap: 10px;
+
+    font-family: var(--font-main);
+    margin: 0;
+    /* padding: 0 1rem 1rem 1rem; */
+    text-align: center;
+    overflow: hidden;
+}
+
+#menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blue-iron);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin:auto;
+    padding: 2rem;
+}
+
+.menu-square {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--white3);
+        border-radius: 2rem;
+    color: var(--blue-iron);
+    display: flex;
+            flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    /* gap: 10px; */
+    padding: 1rem;
+}
 
 
-#hours-of-operation, #about-header, #location-header {
+
+#hours-of-operation, #about-header, #location-header, #menu-header {
     font-size: var(--h2);
 }
 
