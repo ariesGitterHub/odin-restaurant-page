@@ -2,11 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* All three... */
-
 :root {
     --white: #fafbfd;
-    /* --white: red; */
     --white2: #fafbfd66;
     --white3: #fafbfd80;
     --rose: #ee93b4;
@@ -20,7 +17,9 @@
     --font-main: "Roboto Condensed", sans-serif;
     --h1: 2.25rem;
     --h2: 1.5rem;
-    --p: 1.25rem
+    --p: 1.25rem;
+    --width: 320px;
+    --event-menu-width: 320px;
 }
 
 * {
@@ -32,27 +31,9 @@
 body {
     height: 100vh;
     width: 100vw;
-        background-color: var(--blue-iron);
+    background-color: var(--blue-iron);
     margin: auto;
 }
-
-/* #title {
-    height: auto;
-    width: 100vw;
-    background-color: var(--blue-iron);
-    border-top: 5px double var(--white);
-        border-bottom: 5px double var(--white);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    font-family: var(--font-title);
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    padding: .5rem 0 .5rem 0;
-} */
 
 #subtitle {
     display: flex;
@@ -60,22 +41,10 @@ body {
         align-items: center;
 }
 
-/* h1 {
-
-}
-
-h2 {
-
-} */
-
 h1, h2 {
     margin: 0;
     padding:0
 }
-
-/* .leaf {
-    width: 2rem;
-}  */
 
 nav {
     height: fit-content;
@@ -97,9 +66,7 @@ nav {
 button {
     height: 2rem;
     width: 4.25rem;
-    /* background: var(--dk-leaf2); */
-        background: var(--blue-iron);
-    /* background: radial-gradient(circle, var(--dk-rose) 10%, var(--rose) 95%); */
+    background: var(--blue-iron);
     border: none;
     border-radius: 5rem;
     color: var(--white);
@@ -110,20 +77,13 @@ button {
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 900;
-    /* margin: .25rem; */
     outline: none;
     padding: .25rem;
 }
 
 button:hover {
-    /* background: var(--dk-rose); */
     border: .75px double var(--rose);
-    /* border-bottom: 1px solid var(--rose);
-        border-left: 1px solid var(--rose);
-                border-right: 1px solid var(--rose);
-                border-top: 1px solid var(--rose); */
     color: var(--rose);
-    /* transform: scale(1.15); */
 }
 
 button:focus {
@@ -131,7 +91,6 @@ button:focus {
 }
 
 button:active {
-    /* background: radial-gradient(circle, var(--rose) 65%, var(--white) 95%); */
     transform: scale(.9);
 }
 
@@ -142,8 +101,6 @@ footer {
     left: 0; 
     right: 0; 
     bottom: 0;
-    /* height: auto;
-    width: auto; */
     background-color: var(--blue-iron);
     border-top: 5px double var(--white);
     color: var(--white);
@@ -157,8 +114,6 @@ footer {
     font-style: normal;
     padding: 1rem;
 }
-
-/* ELEMENTS FOUND ON EVERY PAGE */
 
 #splash-image, #about-image, #events-image, #hours-image, #location-image, #menu-image {
     height: 100vh;
@@ -185,11 +140,10 @@ footer {
 }
 
 #arkham-map-image {
-  height: auto;  
-  width: 250px;
-  margin: .5rem;
+    height: auto;  
+    width: 300px;
+    margin: .5rem;
 }
-
 
 #splash, #about, #hours, #location {
     height: 100vh;
@@ -202,8 +156,6 @@ footer {
 }
 
 
-
-
 #store-name-cont {
     height: fit-content;
     width: auto;
@@ -214,8 +166,6 @@ footer {
     bottom: 0%;
     z-index: 10;
     background-color: var(--white3);
-    /* border-top: 5px double var(--white);
-        border-bottom: 5px double var(--white); */
     color: var(--blue-iron);
     display: flex;
     flex-direction: column;
@@ -253,33 +203,10 @@ footer {
     width: 2rem;
 }
 
-
-/* HOURS PAGE */
-
-/* #hours {
-    height: 100vh;
-    width: auto;
-
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-} */
-
-/* #hours-image {
-  position: absolute;
-      z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}  */
-
 #schedule-cont, #about-cont, #location-cont {
     height: fit-content;
-    width: 300px;
-    z-index: 5;
+    width: var(--width);
+    z-index: 2;
     background-color: var(--lt-leaf2);
     /* border: 5cm double var(--blue-iron); */
     border-radius: 3rem;
@@ -297,31 +224,28 @@ footer {
 
 
 #events, #menu {
-    height: auto;
-    width: auto;
-    /* background-color: var(--blue-iron); */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start; */
-    /* gap: 1rem; */
+    align-items: center;
     margin: auto;
-    padding: 2rem;
+    padding: 4rem 0 4rem 0;
 }
 
 #events-cont, #menu-cont {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    margin: 3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+    /* margin: auto; */
+    font-family: var(--font-main);
 }
 
-.event-square {
+.event-square, .menu-square {
     height: fit-content;
-    width: 300px;
+    width: var(--event-menu-width);
     z-index: 2;
     background-color: var(--rose);
     border-radius: 2rem;
@@ -334,20 +258,12 @@ footer {
     padding: 1rem;
 }
 
+.event-square {
+    background-color: var(--rose);
+}
 
 .menu-square {
-    height: 225px;
-    width: 300px;
-    z-index: 2;
     background-color: var(--white);
-    border-radius: 2rem;
-    color: var(--blue-iron);
-    display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    margin: .5rem;
-    padding: 1rem;
 }
 
 .item, .what {
@@ -360,7 +276,7 @@ footer {
 }
 
 .description, .blurb {
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 #hours-of-operation, #about-header, #location-header, #menu-header {
@@ -393,13 +309,3 @@ footer {
 #days, #times {
     white-space: pre; 
 }
-
-
-/* Events Page */
-
-
-
-/* Menu Page */
-
-
-/* About Page */

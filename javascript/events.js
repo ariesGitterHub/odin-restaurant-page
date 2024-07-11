@@ -31,14 +31,18 @@ function createEvents() {
         what.textContent = eventItem.what;
         eventSquare.appendChild(what);
 
+        const break1 = document.createElement("br");
+        break1.classList.add("wipe");
+        eventSquare.appendChild(break1);
+
         const when = document.createElement("p");
         when.classList.add("wipe", "when");
         when.textContent = `${eventItem.when}`;
         eventSquare.appendChild(when);
 
-        const break1 = document.createElement("br");
-        break1.classList.add("wipe");
-        eventSquare.appendChild(break1);
+        const break2 = document.createElement("br");
+        break2.classList.add("wipe");
+        eventSquare.appendChild(break2);
 
         const blurb = document.createElement("p");
         blurb.classList.add("wipe", "blurb");
