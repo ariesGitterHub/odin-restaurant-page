@@ -48,9 +48,8 @@ function createAbout() {
     aboutQuote.id = "about-quote";
     aboutQuote.classList.add("p-center", "wipe");
     aboutQuote.textContent =
-      "'A most winsome and decadent establishment. The little cakes were also quite satisfactory, nearing scrumptious.' ~Edgar Allen Poe";
+        "'A most winsome and decadent establishment. The little cakes were also quite satisfactory, nearing scrumptious.' ~Edgar Allen Poe";
     aboutCont.appendChild(aboutQuote);
-
-}
+    }
 
 export { createAbout };

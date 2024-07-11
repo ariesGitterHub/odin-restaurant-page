@@ -9,20 +9,6 @@ import { createMenu } from "../javascript/menu.js";
 createSplash(); // Seems like the simplest way to institute a default on webpage load up.
 
 const buttonListeners = (function () {
-    // const splash = document.querySelector("#splash");
-    // const about = document.querySelector("#about");
-    // const events = document.querySelector("#events");
-    // const hours = document.querySelector("#hours");
-    // const location = document.querySelector("#location");
-    // const menu = document.querySelector("#menu");
-
-    // const splashBtn = document.querySelector("#splash-btn");
-    // const aboutBtn = document.querySelector("#about-btn");
-    // const eventsBtn = document.querySelector("#events-btn");
-    // const hoursBtn = document.querySelector("#hours-btn");
-    // const locationBtn = document.querySelector("#location-btn");
-    // const menuBtn = document.querySelector("#menu-btn");
-
     const content = document.querySelector("#content");  
 
     function wipeOut() {
@@ -41,11 +27,6 @@ const buttonListeners = (function () {
     console.log(currentFunction);
 
     function isCurrentFunction() {
-        // if (currentFunction === "") {
-        //   wipeOut();
-        //   createSplash();
-        // } 
-
         if (currentFunction === "isSplash") {
             wipeOut();
             createSplash();
@@ -77,11 +58,10 @@ const buttonListeners = (function () {
         } 
     }
 
-
     nav.addEventListener("click", (event) => {
- let currentBtn = "";
-            console.log(currentBtn);
-            console.log(currentFunction);
+    let currentBtn = "";
+            // console.log(currentBtn);
+            // console.log(currentFunction);
 
         const isButton = event.target.nodeName === "BUTTON";
         if (!isButton) {
@@ -135,5 +115,4 @@ const buttonListeners = (function () {
 
     isCurrentFunction();
     });
-
 })()

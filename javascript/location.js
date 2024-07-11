@@ -38,7 +38,7 @@ function createLocation() {
   locationBlurb.id = "location-blurb";
   locationBlurb.classList.add("p-center", "wipe");
   locationBlurb.textContent =
-    "Look for our ivy wreathed iron gate at 23 Miskatonic Avenue (Rear), in beautiful Arkham, MA 01930; also please mind the cats that shelter about.";
+  "Look for our ivy wreathed iron gate at 23 Miskatonic Avenue (Rear), in beautiful Arkham, MA 01930; also please mind the cats that shelter about.";
   locationCont.appendChild(locationBlurb);
 
   const arkhamMapImg = document.createElement("img");
@@ -46,7 +46,6 @@ function createLocation() {
   arkhamMapImg.classList.add("wipe");
   arkhamMapImg.src = arkhamMapImage;
   locationCont.appendChild(arkhamMapImg);
-
 }
 
 export { createLocation };
