@@ -78,7 +78,7 @@ button {
     /* background-color: var(--blue-iron); */
     background-color: transparent;
     border: none;
-    border-radius: 5rem;
+    /* border-radius: 5rem; */
     color: var(--white);
     display: flex;
         justify-content: center;
@@ -90,9 +90,13 @@ button {
     padding: .25rem;
 }
 
-button:hover, button:focus {
+button:hover {
     color: var(--rose);
-    transform: scale(1.25);
+    transform: scale(1.2);
+}
+
+button:focus {
+    border-bottom: 6px dotted var(--white);
 }
 
 button:active {
@@ -347,6 +351,11 @@ footer {
         font-weight: 900;
         padding: .5rem;
     }
+
+    button:focus {
+        border-bottom: 9px dotted var(--white);
+    }
+
 
     footer {
         font-size: 1.75rem;
