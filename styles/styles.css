@@ -68,23 +68,21 @@ nav {
     display: flex;
         justify-content: center;
         align-items: center;
-        gap: .5rem;
-    padding: .5rem;
+        gap: .25rem;
+    padding: 1rem;
 }
 
 button {
     height: 2rem;
     width: 4.25rem;
-    /* background-color: var(--blue-iron); */
     background-color: transparent;
     border: none;
-    /* border-radius: 5rem; */
     color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
     font-family: var(--font-title);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 900;
     outline: none;
     padding: .25rem;
@@ -92,11 +90,11 @@ button {
 
 button:hover {
     color: var(--rose);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 button:focus {
-    border-bottom: 6px dotted var(--white);
+    /* border-bottom: 6px dotted var(--white); */
 }
 
 button:active {
@@ -119,7 +117,7 @@ footer {
     font-family: var(--font-title);
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-style: normal;
     padding: 1rem;
 }
@@ -287,6 +285,7 @@ footer {
 
 
 /* EVENT/MENU PAGE FLEX TILES    */
+
 .event-square, .menu-square {
     height: fit-content;
     width: var(--event-menu-width);
@@ -329,11 +328,8 @@ footer {
 
 @media screen and (min-width: 600px) {
     :root {
-    /* --h1: 2.25rem; */
     --h1: 3rem;
-    /* --h2: 1.5rem; */
     --h2: 2rem;
-    /* --p: 1.25rem; */
     --p: 1.5rem;
     --width: 500px;
     --event-menu-width: 375px;
@@ -352,10 +348,9 @@ footer {
         padding: .5rem;
     }
 
-    button:focus {
+    /* button:focus {
         border-bottom: 9px dotted var(--white);
-    }
-
+    } */
 
     footer {
         font-size: 1.75rem;
@@ -388,19 +383,15 @@ footer {
     }
 
     .item, .what {
-        /* font-size: 1.5rem; */
         font-size: 1.5rem;
     }
 
     .price, .when {
-        /* font-size: 1.25rem; */
         font-size: 1.25rem;
     }
 
     .description, .blurb {
-        /* font-size: 1.25rem; */
         font-size: 1.25rem;
     }
-
 }
 
