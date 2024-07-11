@@ -90,15 +90,10 @@ button {
     padding: .25rem;
 }
 
-button:hover {
+button:hover, button:focus {
     color: var(--rose);
     transform: scale(1.25);
 }
-
-button:focus {
-    color: var(--lt-leaf);
-}
-
 
 button:active {
     transform: scale(.9);
@@ -266,10 +261,6 @@ footer {
         align-items: center;
         flex-wrap: wrap;
 }
-
-/* #schedule-cont h2, #schedule-cont p {
-    font-weight: 500;
-} */
 
 #days-times {
     display: flex;
