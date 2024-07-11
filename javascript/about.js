@@ -14,6 +14,7 @@ function createAbout() {
     aboutImg.id = "about-image";
     aboutImg.classList.add("wipe");
     aboutImg.src = aboutImage;
+    aboutImg.alt = "Many pink roses hang from a wide, arched cast iron garden gate"
     about.appendChild(aboutImg);
 
     const aboutCont = document.createElement("div");
@@ -24,7 +25,7 @@ function createAbout() {
     const iconAbout = document.createElement("img");
     iconAbout.classList.add("logo2", "wipe");
     iconAbout.src = iconAboutImage;
-    iconAbout.alt = "An ornate lock";
+    iconAbout.alt = "An ornate floral pattern";
     aboutCont.appendChild(iconAbout);
 
     const aboutHeader = document.createElement("h2");
@@ -37,7 +38,7 @@ function createAbout() {
     aboutBlurb.id = "about-blurb";
     aboutBlurb.classList.add("p-center", "wipe");
     aboutBlurb.textContent =
-        "Since 1766, this humble shop has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas.";
+        "Since 1766, this humble shop has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas. Some say our coffee is pretty good too.";
     aboutCont.appendChild(aboutBlurb);
 
     const break1 = document.createElement("br");
@@ -50,6 +51,10 @@ function createAbout() {
     aboutQuote.textContent =
         "'A most winsome and decadent establishment. The little cakes were also quite satisfactory, nearing scrumptious.' ~Edgar Allen Poe";
     aboutCont.appendChild(aboutQuote);
+
+    const break2 = document.createElement("br");
+    break1.classList.add("wipe");
+    aboutCont.appendChild(break2);
     }
 
 export { createAbout };

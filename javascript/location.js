@@ -6,46 +6,47 @@ import arkhamMapImage from "../assets/images/bluecollar-love-arkham-map-circle-o
 const content = document.querySelector("#content");
 
 function createLocation() {
-  const location = document.createElement("div");
-  location.id = "location";
-  location.classList.add("wipe");
-  content.appendChild(location);
+    const location = document.createElement("div");
+    location.id = "location";
+    location.classList.add("wipe");
+    content.appendChild(location);
 
-  const locationImg = document.createElement("img");
-  locationImg.id = "location-image";
-  locationImg.classList.add("wipe");
-  locationImg.src = locationImage;
-  location.appendChild(locationImg);
+    const locationImg = document.createElement("img");
+    locationImg.id = "location-image";
+    locationImg.classList.add("wipe");
+    locationImg.src = locationImage;
+    locationImg.alt = "A view of a cobble-stoned alleyway lined with red brick, colonial era townhomes";
+    location.appendChild(locationImg);
 
-  const locationCont = document.createElement("div");
-  locationCont.id = "location-cont";
-  locationCont.classList.add("wipe");
-  location.appendChild(locationCont);
+    const locationCont = document.createElement("div");
+    locationCont.id = "location-cont";
+    locationCont.classList.add("wipe");
+    location.appendChild(locationCont);
 
-  const iconLocation = document.createElement("img");
-  iconLocation.classList.add("logo", "wipe", "pad-top-bot");
-  iconLocation.src = iconLocationImage;
-  iconLocation.alt = "An ornate lock";
-  locationCont.appendChild(iconLocation);
+    const iconLocation = document.createElement("img");
+    iconLocation.classList.add("logo", "wipe", "pad-top-bot");
+    iconLocation.src = iconLocationImage;
+    iconLocation.alt = "An ornate lock";
+    locationCont.appendChild(iconLocation);
 
-  const locationHeader = document.createElement("h2");
-  locationHeader.id = "location-header";
-  locationHeader.classList.add("wipe");
-  locationHeader.textContent = "Where to Find Us!";
-  locationCont.appendChild(locationHeader);
+    const locationHeader = document.createElement("h2");
+    locationHeader.id = "location-header";
+    locationHeader.classList.add("wipe");
+    locationHeader.textContent = "Where to Find Us!";
+    locationCont.appendChild(locationHeader);
 
-  const locationBlurb = document.createElement("p");
-  locationBlurb.id = "location-blurb";
-  locationBlurb.classList.add("p-center", "wipe");
-  locationBlurb.textContent =
-  "Look for our ivy wreathed iron gate at 23 Miskatonic Avenue (Rear), in beautiful Arkham, MA 01930; also please mind the cats that shelter about.";
-  locationCont.appendChild(locationBlurb);
+    const locationBlurb = document.createElement("p");
+    locationBlurb.id = "location-blurb";
+    locationBlurb.classList.add("p-center", "wipe");
+    locationBlurb.textContent =
+    "Look for our ivy wreathed iron gate at 23 Miskatonic Avenue (Rear), in beautiful Arkham, MA 01930; also please mind the cats that shelter about.";
+    locationCont.appendChild(locationBlurb);
 
-  const arkhamMapImg = document.createElement("img");
-  arkhamMapImg.id = "arkham-map-image";
-  arkhamMapImg.classList.add("wipe");
-  arkhamMapImg.src = arkhamMapImage;
-  locationCont.appendChild(arkhamMapImg);
+    const arkhamMapImg = document.createElement("img");
+    arkhamMapImg.id = "arkham-map-image";
+    arkhamMapImg.classList.add("wipe");
+    arkhamMapImg.src = arkhamMapImage;
+    locationCont.appendChild(arkhamMapImg);
 }
 
 export { createLocation };

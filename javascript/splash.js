@@ -2,10 +2,8 @@ import "../styles/styles.css";
 import splashImage from "../assets/images/jaredd-craig-HH4WBGNyltc-unsplash.jpg";
 import leafLtImage from "../assets/images/ornamental-leaf-lt.svg";
 import leafRtImage from "../assets/images/ornamental-leaf-rt.svg";
-// import roseCircle from "../assets/images/ornamental-circle-rose.svg";
 
 const content = document.querySelector("#content");
-console.log("test");
 
 function createSplash() {
     const splash = document.createElement("div");
@@ -16,13 +14,9 @@ function createSplash() {
     const splashImg = document.createElement("img");
     splashImg.id = "splash-image";
     splashImg.src = splashImage;
+    splashImg.alt = "An open book, framed by circular window created from stacked books, floats within a congested bookstore"
     splashImg.classList.add("wipe");
     splash.appendChild(splashImg);
-
-    // const circleRotate = document.createElement("img");
-    // circleRotate.classList.add("circle");
-    // circleRotate.src = roseCircle;
-    // splash.appendChild(circleRotate);
 
     const storeNameCont = document.createElement("div");
     storeNameCont.id = "store-name-cont";

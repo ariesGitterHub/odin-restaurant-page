@@ -68,20 +68,21 @@ nav {
     display: flex;
         justify-content: center;
         align-items: center;
+        gap: .5rem;
     padding: .5rem;
 }
 
 button {
     height: 2rem;
     width: 4.25rem;
-    background: var(--blue-iron);
+    /* background-color: var(--blue-iron); */
+    background-color: transparent;
     border: none;
     border-radius: 5rem;
     color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 900;
@@ -90,13 +91,14 @@ button {
 }
 
 button:hover {
-    border: .75px double var(--rose);
     color: var(--rose);
+    transform: scale(1.25);
 }
 
 button:focus {
-    background-color: var(--dk-leaf );
+    color: var(--lt-leaf);
 }
+
 
 button:active {
     transform: scale(.9);
@@ -145,7 +147,7 @@ footer {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    padding: .25rem;
+    padding: .5rem;
 }
 
 #store-name {
@@ -236,21 +238,22 @@ footer {
 }
 
 .logo { 
-    height: 6rem;
+    height: 4.5rem;
 }
 
 /* Only used on the about page due to that logo having different dimensions. */
 .logo2 { 
-    height: 9rem;
+    height: 6rem;
 }
 
 /* Only used on the location page to even out logo placement. */
 .pad-top-bot {
-    margin: 1.35rem 0 1.35rem 0;
+    margin: 1.2rem 0 1.2rem 0;
 }
 
 #hours-of-operation, #about-header, #location-header, #menu-header {
     font-size: var(--h2);
+    font-weight: 900;
 }
 
 #schedule-cont p, #about-cont p, #location-cont p {
@@ -264,9 +267,9 @@ footer {
         flex-wrap: wrap;
 }
 
-#schedule-cont h2, #schedule-cont p {
+/* #schedule-cont h2, #schedule-cont p {
     font-weight: 500;
-}
+} */
 
 #days-times {
     display: flex;
@@ -283,7 +286,7 @@ footer {
 /* Map circle of Arkham, only used on location page */
 #arkham-map-image {
     height: auto;  
-    width: 300px;
+    width: 275px;
     margin: .5rem;
 }
 
@@ -313,11 +316,12 @@ footer {
 }
 
 .item, .what {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 900;
 }
 
 .price, .when {
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -328,5 +332,75 @@ footer {
 
 /* MEDIA QUERIES                 */
 
+@media screen and (min-width: 600px) {
+    :root {
+    /* --h1: 2.25rem; */
+    --h1: 3rem;
+    /* --h2: 1.5rem; */
+    --h2: 2rem;
+    /* --p: 1.25rem; */
+    --p: 1.5rem;
+    --width: 500px;
+    --event-menu-width: 375px;
+    }
 
+    nav {
+        gap: .75rem;
+        padding: .75rem;
+    }   
+
+    button {
+        height: 2.75rem;
+        width: 7rem;
+        font-size: 1.75rem;
+        font-weight: 900;
+        padding: .5rem;
+    }
+
+    footer {
+        font-size: 1.75rem;
+    }
+
+    #store-name-cont {
+    padding: 1rem;
+}
+
+    .leaf {
+        width: 2.5rem;
+    }
+
+    .logo { 
+        height: 7rem;
+    }
+
+    .logo2 { 
+        height: 10rem;
+    }
+
+    #arkham-map-image {
+        width: 375px;
+        margin-bottom: 2.25rem;
+    }
+
+    .event-square, .menu-square {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .item, .what {
+        /* font-size: 1.5rem; */
+        font-size: 1.5rem;
+    }
+
+    .price, .when {
+        /* font-size: 1.25rem; */
+        font-size: 1.25rem;
+    }
+
+    .description, .blurb {
+        /* font-size: 1.25rem; */
+        font-size: 1.25rem;
+    }
+
+}
 

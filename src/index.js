@@ -15,16 +15,13 @@ const buttonListeners = (function () {
         const wipe = content.querySelectorAll(".wipe"); 
         wipe.forEach(function (child) {
         child.remove();
-    });   
+        });   
     }
 
     const nav = document.querySelector("nav");
 
     let currentBtn = "";
     let currentFunction = "";
-    
-    console.log(currentBtn);
-    console.log(currentFunction);
 
     function isCurrentFunction() {
         if (currentFunction === "isSplash") {
@@ -60,8 +57,6 @@ const buttonListeners = (function () {
 
     nav.addEventListener("click", (event) => {
     let currentBtn = "";
-            // console.log(currentBtn);
-            // console.log(currentFunction);
 
         const isButton = event.target.nodeName === "BUTTON";
         if (!isButton) {

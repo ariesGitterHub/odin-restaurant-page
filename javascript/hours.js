@@ -6,7 +6,6 @@ import iconHoursImage from "../assets/images/icon-hours.svg";
 const content = document.querySelector("#content");
 
 function createHours() {
-
     const hours = document.createElement("div");
     hours.id = "hours"; 
     hours.classList.add("wipe");  
@@ -16,6 +15,7 @@ function createHours() {
     hoursImg.id = "hours-image";
     hoursImg.classList.add("wipe");
     hoursImg.src = hoursImage;
+    hoursImg.alt = "People rummage about a crowded bookstore";
     hours.appendChild(hoursImg);
 
     const scheduleCont = document.createElement("div");
