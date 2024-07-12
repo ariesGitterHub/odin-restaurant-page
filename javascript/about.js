@@ -2,9 +2,9 @@ import "../styles/styles.css";
 import aboutImage from "../assets/images/colin-maynard-HsG4OEPqGYc-unsplash.jpg";
 import iconAboutImage from "../assets/images/icon-about.svg";
 
-const content = document.querySelector("#content");
-
 function createAbout() {
+    const content = document.querySelector("#content");
+    
     const about = document.createElement("div");
     about.id = "about";
     about.classList.add("wipe");
@@ -38,7 +38,7 @@ function createAbout() {
     aboutBlurb.id = "about-blurb";
     aboutBlurb.classList.add("p-center", "wipe");
     aboutBlurb.textContent =
-        "Since 1766, this humble bookstore has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas. Some say our coffee is pretty good too.";
+        "Since 1766, this humble bookstore has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas. Some folks also say that our coffee is pretty good too.";
     aboutCont.appendChild(aboutBlurb);
 
     const break1 = document.createElement("br");

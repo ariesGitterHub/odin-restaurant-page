@@ -3,9 +3,9 @@ import locationImage from "../assets/images/tiffany-chan-lT2hiMUACco-unsplash.jp
 import iconLocationImage from "../assets/images/icon-location.svg";
 import arkhamMapImage from "../assets/images/bluecollar-love-arkham-map-circle-only.png";
 
-const content = document.querySelector("#content");
-
 function createLocation() {
+    const content = document.querySelector("#content");
+    
     const location = document.createElement("div");
     location.id = "location";
     location.classList.add("wipe");

@@ -3,9 +3,9 @@ import daysTimesData from "../data/daysTimes.json";
 import hoursImage from "../assets/images/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg";
 import iconHoursImage from "../assets/images/icon-hours.svg";
 
-const content = document.querySelector("#content");
-
 function createHours() {
+    const content = document.querySelector("#content");
+
     const hours = document.createElement("div");
     hours.id = "hours"; 
     hours.classList.add("wipe");  
@@ -63,16 +63,21 @@ function createHours() {
     const addSchedule = (function () {
         const days = document.querySelector("#days");
         const times = document.querySelector("#times");
-        daysTimesData.forEach((dayOfWeek) => {
-            const dayElement = document.createElement("p");
-            dayElement.textContent = dayOfWeek.day;
-            days.appendChild(dayElement);
-        });
-        daysTimesData.forEach((timeOfWeek) => {
-            const timeElement = document.createElement("p");
-            timeElement.textContent = timeOfWeek.time;
-            times.appendChild(timeElement);
-        });
+
+        try {
+            daysTimesData.forEach((dayOfWeek) => {
+                const dayElement = document.createElement("p");
+                dayElement.textContent = dayOfWeek.day;
+                days.appendChild(dayElement);
+            });
+            daysTimesData.forEach((timeOfWeek) => {
+                const timeElement = document.createElement("p");
+                timeElement.textContent = timeOfWeek.time;
+                times.appendChild(timeElement);
+            });
+        } catch (error) {
+            console.error('Error loading daysTimesData:', error);
+        }
     })()
 
     const break2 = document.createElement("br");

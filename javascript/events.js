@@ -2,9 +2,9 @@ import "../styles/styles.css";
 import eventsImage from "../assets/images/brandon-lopez-3E_8XgqRSps-unsplash.jpg";
 import eventItemsData from "../data/eventItems.json";
 
-const content = document.querySelector("#content");
-
 function createEvents() {
+    const content = document.querySelector("#content");
+
 	const events = document.createElement("div");
 	events.id = "events";
 	events.classList.add("wipe");
@@ -23,7 +23,8 @@ function createEvents() {
 	events.appendChild(eventsCont);
 
     const addEventItems = (function () {
-        eventItemsData.forEach((eventItem) => {
+        try {
+            eventItemsData.forEach((eventItem) => {
             const eventSquare = document.createElement("div");
             eventSquare.classList.add("wipe", "event-square");
 
@@ -52,6 +53,10 @@ function createEvents() {
 
             eventsCont.appendChild(eventSquare);
         });
+        } catch (error) {
+            console.error("Error loading eventItemsData:", error);
+        }
+
     })();
 }
 

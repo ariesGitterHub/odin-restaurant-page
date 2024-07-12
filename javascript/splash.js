@@ -3,9 +3,9 @@ import splashImage from "../assets/images/jaredd-craig-HH4WBGNyltc-unsplash.jpg"
 import leafLtImage from "../assets/images/ornamental-leaf-lt.svg";
 import leafRtImage from "../assets/images/ornamental-leaf-rt.svg";
 
-const content = document.querySelector("#content");
-
 function createSplash() {
+    const content = document.querySelector("#content");
+
     const splash = document.createElement("div");
     splash.id = "splash";
     splash.classList.add("wipe");
