@@ -236,7 +236,7 @@ footer {
 
 /* Only used on the about page due to that logo having different dimensions. */
 .logo2 { 
-    height: 6rem;
+    height: 5.75rem;
 }
 
 /* Only used on the location page to even out logo placement. */
