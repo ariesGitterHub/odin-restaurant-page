@@ -38,7 +38,7 @@ function createAbout() {
     aboutBlurb.id = "about-blurb";
     aboutBlurb.classList.add("p-center", "wipe");
     aboutBlurb.textContent =
-        "Since 1766, this humble shop has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas. Some say our coffee is pretty good too.";
+        "Since 1766, this humble bookstore has worked to enlighten and transcend the common by providing a sacred forum for the free exchange of worthy ideas. Some say our coffee is pretty good too.";
     aboutCont.appendChild(aboutBlurb);
 
     const break1 = document.createElement("br");
@@ -49,7 +49,7 @@ function createAbout() {
     aboutQuote.id = "about-quote";
     aboutQuote.classList.add("p-center", "wipe");
     aboutQuote.textContent =
-        "'A most winsome and decadent establishment. The little cakes were also quite satisfactory, nearing scrumptious.' ~Edgar Allen Poe";
+        "'A most winsome and decadent establishment. The little cakes were also quite satisfactory, nearing scrumptious.' ~Edgar Allen Poe (while visiting Arkham in 1844)";
     aboutCont.appendChild(aboutQuote);
 
     const break2 = document.createElement("br");

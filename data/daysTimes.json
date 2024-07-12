@@ -1,8 +1,8 @@
 [
     { "id": 1, "day": "Monday: ", "time": "Closed" },
-    { "id": 2, "day": "Tuesday: ", "time": "10am - 6pm" },
-    { "id": 3, "day": "Wednesday: ", "time": "10am - 6pm" },
-    { "id": 4, "day": "Thursday: ", "time": "10am - 6pm" },
+    { "id": 2, "day": "Tuesday: ", "time": "10am - 9pm" },
+    { "id": 3, "day": "Wednesday: ", "time": "10am - 9pm" },
+    { "id": 4, "day": "Thursday: ", "time": "10am - 9pm" },
     { "id": 5, "day": "Friday: ", "time": "10am - 6pm" },
     { "id": 6, "day": "Saturday: ", "time": "  9am - 7pm" },
     { "id": 7, "day": "Sunday: ", "time": "11am - 5pm" }

@@ -62,7 +62,7 @@ const buttonListeners = (function () {
         if (!isButton) {
             return
         }
-        console.dir(event.target.id);
+        // console.dir(event.target.id);
 
         if (event.target.id === "splash-btn" && currentBtn !== "splash-btn") {
           currentBtn = "splash-btn";

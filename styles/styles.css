@@ -23,7 +23,7 @@
     --lt-leaf2: #8fc754d8; 
     --dk-leaf: #175f3a;
     --dk-leaf2: #175f3a80;
-    --blue-iron: #01393a;
+    --blue-ivy: #01393a;
     --font-title:  "Dancing Script", cursive;
     --font-main: "Roboto Condensed", sans-serif;
     --h1: 2.25rem;
@@ -42,7 +42,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: var(--blue-iron);
+    background-color: var(--blue-ivy);
     margin: auto;
 }
 
@@ -62,13 +62,12 @@ nav {
     left: 0; 
     right: 0; 
     bottom: 95%;
-    background-color: var(--blue-iron);
+    background-color: var(--blue-ivy);
     border-bottom: 5px double var(--white);
     color: var(--white);
     display: flex;
         justify-content: center;
         align-items: center;
-        gap: .25rem;
     padding: 1rem;
 }
 
@@ -82,19 +81,16 @@ button {
         justify-content: center;
         align-items: center;
     font-family: var(--font-title);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 900;
     outline: none;
+    margin: .25rem;
     padding: .25rem;
 }
 
 button:hover {
     color: var(--rose);
     transform: scale(1.1);
-}
-
-button:focus {
-    /* border-bottom: 6px dotted var(--white); */
 }
 
 button:active {
@@ -108,7 +104,7 @@ footer {
     left: 0; 
     right: 0; 
     bottom: 0;
-    background-color: var(--blue-iron);
+    background-color: var(--blue-ivy);
     border-top: 5px double var(--white);
     color: var(--white);
     display: flex;
@@ -117,7 +113,7 @@ footer {
     font-family: var(--font-title);
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-style: normal;
     padding: 1rem;
 }
@@ -135,7 +131,7 @@ footer {
     bottom: 0%;
     z-index: 10;
     background-color: var(--white3);
-    color: var(--blue-iron);
+    color: var(--blue-ivy);
     display: flex;
     flex-direction: column;
         justify-content: center;
@@ -153,7 +149,7 @@ footer {
 
 #store-name-sub {
     font-size: var(--h2);
-        white-space: pre; 
+    white-space: pre; 
 }
 
 #store-name, #store-name-sub  {
@@ -208,13 +204,13 @@ footer {
     object-fit: cover;
 }
 
-#schedule-cont, #about-cont, #location-cont {
+#about-cont, #schedule-cont, #location-cont {
     height: fit-content;
     width: var(--width);
     z-index: 2;
     background-color: var(--lt-leaf2);
     border-radius: 3rem;
-    color: var(--blue-iron);
+    color: var(--blue-ivy);
     display: flex;
         flex-direction: column;
         justify-content: start;
@@ -290,14 +286,13 @@ footer {
     height: fit-content;
     width: var(--event-menu-width);
     z-index: 2;
-    background-color: var(--rose);
     border-radius: 2rem;
-    color: var(--blue-iron);
+    color: var(--blue-ivy);
     display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-    margin: .5rem;
+    margin: 1.25rem;
     padding: 1rem;
 }
 
@@ -348,10 +343,6 @@ footer {
         padding: .5rem;
     }
 
-    /* button:focus {
-        border-bottom: 9px dotted var(--white);
-    } */
-
     footer {
         font-size: 1.75rem;
     }
@@ -378,8 +369,8 @@ footer {
     }
 
     .event-square, .menu-square {
-        margin: 1rem;
-        padding: 1rem;
+        margin: 1.5rem;
+        padding: 1.25rem;
     }
 
     .item, .what {
