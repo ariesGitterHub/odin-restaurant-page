@@ -1,7 +1,7 @@
 # odin-restaurant-page
 
 ## Reminder to Myself...
-Use: "npx webpack" to build local host page, then open index.html in Live Server.
+Use "npx webpack" to build local host page, then open index.html in Live Server.
 Use "npx webpack --watch" to keep making changes that be will automatically updated in a save, as typing in "npx webpack" gets old fast.
 
 Use regular methods of updating github, but use "npm run deploy" to update "git subtree push --prefix dist origin gh-pages". This effectively updates the github webpage for this app. This can be seen within "scripts" in the package.json file.
